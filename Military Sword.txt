@@ -1,0 +1,536 @@
+
+)dne
+)(straPevomer	
+dne	
+))i*)54(dar.htam- ,0 ,i*)56(dar.htam(selgnA.emarFC*)i*5.- ,0 ,i*1-(wen.emarFC(AR.etamina		
+))i*)51(dar.htam- ,0 ,i*)51(dar.htam-(selgnA.emarFC(AL.etamina		
+))0 ,i*)54(dar.htam ,i*)52(dar.htam-(selgnA.emarFC(daeH.etamina		
+)(tiaw od 1.- ,0 ,1=i rof	
+dne	
+)0 ,ip.htam ,0(selgnA.emarFC*)i+5.2- ,0 ,0(wen.emarFC=1C.WeldnaH.jbo		
+)(tiaw od 50. ,5. ,0=i rof	
+)0 ,ip.htam ,0(selgnA.emarFC*)5.2- ,0 ,0(wen.emarFC=1C.WeldnaH.jbo	
+esaC.jbo=1traP.WeldnaH.jbo	
+dne	
+))i*)54(dar.htam- ,0 ,i*)56(dar.htam(selgnA.emarFC*)i*5.- ,0 ,i*1-(wen.emarFC(AR.etamina		
+))i*)51(dar.htam- ,0 ,i*)51(dar.htam-(selgnA.emarFC(AL.etamina		
+))0 ,i*)54(dar.htam ,i*)52(dar.htam-(selgnA.emarFC(daeH.etamina		
+)(tiaw od 1. ,1 ,0=i rof	
+eslaf=pool eslaf=detceles	
+)(noitcnuf(tcennoc:detceleseD.nib
+)dne
+)dne	
+dne		
+egar=txeT.lebaLreteM.jbo			
+)0 ,1 ,0 ,001/egar(wen.2miDU=eziS.reteM.jbo			
+gmd.." :egamaD"=txeT.GMDwohS.jbo			
+)(tiaw od detceles elihw		
+)(noitcnuf(s	
+eurt=detceles	
+)dne	
+dne eslaf=pool neht "f"==yek fi		
+dne eslaf=pool neht "c"==yek fi		
+)(rewol:yek=yek lacol		
+)yek(noitcnuf(tcennoc:pUyeK.esuom	
+)dne	
+dne		
+eslaf=yek.bed			
+)(hsubmA			
+eurt=yek.bed			
+neht eslaf==gnidleihs dna eslaf==yek.bed dna "q"==yek fi		
+dne		
+eslaf=yek.bed			
+)esuom(dloHkcattA			
+eurt=pool eurt=yek.bed			
+neht eslaf==gnidleihs dna eslaf==yek.bed dna "f"==yek fi		
+dne		
+eslaf=gnidleihs			
+)esuom(kcolB			
+eurt=pool eurt=gnidleihs			
+neht eslaf==gnidleihs dna eslaf==yek.bed dna "c"==yek fi		
+)(rewol:yek=yek lacol		
+)yek(noitcnuf(tcennoc:nwoDyeK.esuom	
+)dne eslaf=pool )(noitcnuf(tcennoc:pU1nottuB.esuom	
+)kcattA(tcennoc:nwoD1nottuB.esuom	
+)(gninnur	
+dne	
+))i*)54(dar.htam- ,0 ,i*)56(dar.htam(selgnA.emarFC*)i*5.- ,0 ,i*1-(wen.emarFC(AR.etamina		
+))i*)51(dar.htam- ,0 ,i*)51(dar.htam-(selgnA.emarFC(AL.etamina		
+))0 ,i*)54(dar.htam ,i*)52(dar.htam-(selgnA.emarFC(daeH.etamina		
+)(tiaw od 1.- ,0 ,1=i rof	
+)0 ,5.1- ,0(wen.emarFC=1C.WeldnaH.jbo	
+AR.ydob=1traP.WeldnaH.jbo	
+dne	
+)0 ,ip.htam ,0(selgnA.emarFC*)2/i-2- ,0 ,0(wen.emarFC=1C.WeldnaH.jbo		
+))i*)54(dar.htam- ,0 ,i*)56(dar.htam(selgnA.emarFC*)i*5.- ,0 ,i*1-(wen.emarFC(AR.etamina		
+))i*)51(dar.htam- ,0 ,i*)51(dar.htam-(selgnA.emarFC(AL.etamina		
+))0 ,i*)54(dar.htam ,i*)52(dar.htam-(selgnA.emarFC(daeH.etamina		
+)(tiaw od 1. ,1 ,0=i rof	
+)(yalp:gnippiuqE	
+)(straPetaerc )esuom(noitcnuf(tcennoc:detceleS.nib
+dne
+dne	
+dne		
+))i*)09(dar.htam ,0 ,0(selgnA.emarFC(AR.etamina			
+))i*)531(dar.htam- ,0 ,0(selgnA.emarFC(AL.etamina			
+))0 ,i*)09(dar.htam ,0(selgnA.emarFC(osroT.etamina			
+)0 ,0 ,i*)09(dar.htam-(selgnA.emarFC*)0 ,5.1- ,0(wen.emarFC=1C.WeldnaH.jbo			
+)(tiaw od 2.- ,0 ,1=i rof		
+)(evomer:Wosrot		
+eslaf=liart.bed		
+dne		
+)))09(dar.htam ,0 ,0(selgnA.emarFC*)5.*)1 ,1-(modnar.htam ,5.*)1 ,1-(modnar.htam ,5.*)1 ,0(modnar.htam(wen.emarFC(AR.etamina			
+)(yalp:hsalS )(tiaw od 05 ,1=i rof		
+)2. ,"etihW" ,)3- ,0 ,0(wen.emarFC ,edalB.jbo(liart eurt=liart.bed		
+dne		
+))i*)09(dar.htam ,0 ,0(selgnA.emarFC(AR.etamina			
+))i*)531(dar.htam- ,0 ,0(selgnA.emarFC(AL.etamina			
+))0 ,i*)09(dar.htam ,0(selgnA.emarFC(osroT.etamina			
+)0 ,0 ,i*)09(dar.htam-(selgnA.emarFC*)0 ,5.1- ,0(wen.emarFC=1C.WeldnaH.jbo			
+)(tiaw od 2. ,1 ,0=i rof		
+dne		
+dne			
+)dne )2. ,v(raeppa )(noitcnuf(s				
+neht )"traPesaB"(Asi:v fi			
+od ))(nerdlihc:Bledom(sriap ni v ,i rof		
+dne		
+dne			
+)dne				
+)2. ,v(raeppa				
+)dne )dne)2. ,)"xolbor"(dlihCtsriFdnif:v(raeppa )(noitcnuf(s )(noitcnuf(llacp				
+)dne )dne)2. ,)"ecaf"(dlihCtsriFdnif:v(raeppa )(noitcnuf(s )(noitcnuf(llacp				
+)dne )dne)2. ,)"eldnaH"(dlihCtsriFdnif:v(raeppa )(noitcnuf(s )(noitcnuf(llacp				
+)(noitcnuf(s				
+neht )"traPesaB"(Asi:v fi			
+ od ))(nerdlihc:rahc(sriap ni v ,i rof		
+))5 ,0 ,0(wen.emarFC ,osroT.rahCn ,osrot(dleW.dda=Wosrot lacol		
+dne dne )tiHgmd(tcennoc:dehcuoT.v neht )"traPesaB"(Asi:v fi od ))(nerdlihc:rahc(sriap ni v ,i rof		
+dne )tiHgmd(tcennoc:dehcuoT.v od ))(nerdlihc:Bledom(sriap ni v ,i rof		
+)5.(tiaw		
+dne		
+dne			
+)dne )2. ,v(edaf )(noitcnuf(s				
+neht )"traPesaB"(Asi:v fi			
+od ))(nerdlihc:Bledom(sriap ni v ,i rof		
+dne		
+dne			
+)dne				
+)2. ,v(edaf				
+)dne )dne)2. ,)"xolbor"(dlihCtsriFdnif:v(edaf )(noitcnuf(s )(noitcnuf(llacp				
+)dne )dne)2. ,)"ecaf"(dlihCtsriFdnif:v(edaf )(noitcnuf(s )(noitcnuf(llacp				
+)dne )dne)2. ,)"eldnaH"(dlihCtsriFdnif:v(edaf )(noitcnuf(s )(noitcnuf(llacp				
+)(noitcnuf(s				
+neht )"traPesaB"(Asi:v fi			
+ od ))(nerdlihc:rahc(sriap ni v ,i rof		
+neht rahCn fi	
+)02 ,p.emarFC.osrot(soPraen=rahCn lacol	
+)(hsubmA noitcnuf
+dne
+)(gninnur	
+deeps=deepSklaW.namuh	
+)01 ,5(modnar.htam=gmd	
+)(evomer:p	
+dne	
+))i*)54(dar.htam- ,0 ,0(selgnA.emarFC*)i*5.- ,0 ,i*5.-(wen.emarFC(AR.etamina		
+))i*)54(dar.htam ,0 ,0(selgnA.emarFC*)i*5.- ,0 ,i*5.(wen.emarFC(AL.etamina		
+)i*)54(dar.htam ,0 ,0(selgnA.emarFC*)0 ,5.1- ,0(wen.emarFC=1C.WeldnaH.jbo		
+)(tiaw od 2.- ,0 ,1=i rof	
+eslaf=liart.bed	
+dne	
+)))54(dar.htam- ,0 ,i*)531(dar.htam-)531(dar.htam(selgnA.emarFC*)5.- ,i*5.-5. ,5.-(wen.emarFC(AR.etamina		
+)))54(dar.htam ,0 ,i*)531(dar.htam-)531(dar.htam(selgnA.emarFC*)5.- ,i*5.-5. ,5.(wen.emarFC(AL.etamina		
+))0 ,)54(dar.htam+)54(dar.htam- ,0(selgnA.emarFC(osroT.etamina		
+i*2*rotceVkool.emarFC.osrot+emarFC.osrot=emarFC.osrot		
+)(tiaw od 2. ,1 ,0=i rof	
+dne dne )tiHgmd(tcennoc:dehcuoT.v neht )"traPesaB"(Asi:v fi od ))(nerdlihc:rahc(sriap ni v ,i rof	
+dne )tiHgmd(tcennoc:dehcuoT.v od ))(nerdlihc:Bledom(sriap ni v ,i rof	
+)(yalp:hsalS	
+)2. ,"etihW" ,)3- ,0 ,0(wen.emarFC ,edalB.jbo(liart eurt=liart.bed	
+)(evomer:gb	
+dne	
+)2*i ,2*i ,2*i(wen.3rotceV+elacS.Mp=elacS.Mp		
+i=ycnerapsnarT.p		
+)(tiaw od 1. ,1 ,0=i rof	
+)osroT.ydob ,p(dleW.dda	
+)"erehpS" ,lin ,lin ,p ,"hseMlaicepS"(hseM.dda=Mp lacol	
+)emarFC.osroT.ydob ,)2 ,2 ,2(wen.3rotceV ,0 ,"wolley thgirB" ,eslaf ,eslaf ,ecapskrow(traP.dda=p lacol	
+dne	
+)dne		
+dne			
+i=ycnerapsnarT.arua				
+)(tiaw od 50. ,1 ,0=i rof			
+)(noitcnuf(s		
+)dne		
+)(evomer:arua			
+dne			
+)i ,y.elacS.Marua ,i(wen.3rotceV=elacS.Marua				
+)(tiaw od 2. ,6 ,2=i rof			
+)(noitcnuf(s		
+))0 ,))54 ,54-(modnar.htam(dar.htam ,0(selgnA.emarFC*)0 ,3- ,0(wen.emarFC ,osroT.ydob ,arua(dleW.dda		
+"67992302=di?/tessa/moc.xolbor.www//:ptth"=dIhseM.Marua )"eliF" ,lin ,)2 ,5. ,2(wen.3rotceV ,arua ,"hseMlaicepS"(hseM.dda=Marua lacol		
+))0 ,3- ,0(wen.emarFC*emarFC.osroT.ydob ,)1 ,1 ,1(wen.3rotceV ,0 ,"wolley thgirB" ,eslaf ,eslaf ,ecapskrow(traP.dda=arua lacol		
+2+gmd=gmd		
+)p.tiH.esuom ,p.emarFC.osrot(soPetupmoc=emarfc.gb		
+)(tiaw od pool elihw	
+001=D.gb )0 ,eguh.htam ,0(wen.3rotceV=euqroTxam.gb )osrot ,"oryGydoB"(wen.ecnatsnI=gb lacol	
+)(yalp:egrahC	
+dne	
+))i*)54(dar.htam- ,0 ,i*)531(dar.htam(selgnA.emarFC*)i*5.- ,i*5. ,i*5.-(wen.emarFC(AR.etamina		
+))i*)54(dar.htam ,0 ,i*)531(dar.htam(selgnA.emarFC*)i*5.- ,i*5. ,i*5.(wen.emarFC(AL.etamina		
+)i*)54(dar.htam ,0 ,0(selgnA.emarFC*)0 ,5.1- ,0(wen.emarFC=1C.WeldnaH.jbo		
+)(tiaw od 2. ,1 ,0=i rof	
+01=deepSklaW.namuh	
+)esuom(dloHkcattA noitcnuf
+dne
+)(gninnur	
+dne	
+))i*)52(dar.htam ,0 ,0(selgnA.emarFC(AR.etamina		
+))i*)561(dar.htam- ,0 ,0(selgnA.emarFC(AL.etamina		
+))0 ,i*)09(dar.htam- ,0(selgnA.emarFC(osroT.etamina		
+)(tiaw od 2.- ,0 ,1=i rof	
+)(evomer:gb	
+)(evomer:dleihs	
+)5.(tiaw	
+)(evomer:2ff dne )(evomer:v od )ff(sriap ni v ,i rof	
+dne	
+)p.tiH.esuom ,p.emarFC.osrot(soPetupmoc=emarfc.gb		
+)(tiaw od pool elihw	
+)dne	
+dne		
+)2. ,1 ,dleihs(hseMwolg			
+)5.(tiaw od pool elihw		
+)(noitcnuf(s	
+001=D.gb )0 ,eguh.htam ,0(wen.3rotceV=euqroTxam.gb )osrot ,"oryGydoB"(wen.ecnatsnI=gb lacol	
+)dne	
+dne		
+eslaf=tih.bed			
+)2. ,gb(metIdda:sirbeD.emag )2. ,pb(metIdda:sirbeD.emag			
+)p.emarFC.osrot ,p.emarFC.h(wen.emarFC=emarfc.gb )eguh.htam ,eguh.htam ,eguh.htam(wen.3rotceV=euqroTxam.gb )h ,"oryGydoB"(wen.ecnatsnI=gb lacol			
+005=D.pb p.))05- ,0 ,0(wen.emarFC*)p.emarFC.h ,p.emarFC.osrot(wen.emarFC(=noitisop.pb )eguh.htam ,eguh.htam ,eguh.htam(wen.3rotceV=ecroFxam.pb )h ,"noitisoPydoB"(wen.ecnatsnI=pb lacol			
+eurt=tih.bed			
+neht eslaf==tih.bed dna "esaB"=~emaN.h dna ledom=~tneraP.h dna Bledom=~tneraP.h dna )"dionamuH"(dlihCtsriFdnif:tneraP.h ton dna rahc=~tneraP.h dna dleihs=~h fi		
+)h(noitcnuf(tcennoc:dehcuoT.dleihs	
+)))09(dar.htam ,0 ,0(selgnA.emarFC*)2- ,1 ,0(wen.emarFC ,osrot ,dleihs(dleW.dda=Wdleihs lacol	
+)"74107669=di?/tessa/moc.xolbor.www//:ptth" ,lin ,lin ,)4 ,y.eziS.dleihs*1 ,x.eziS.dleihs*1(wen.3rotceV ,dleihs ,"hseMlaicepS"(hseM.dda=Mdleihs lacol	
+)dleihs ,"dleiFecroF"(wen.ecnatsnI=2ff lacol	
+)))09(dar.htam ,0 ,0(selgnA.emarFC*)0 ,1 ,0(wen.emarFC*emarFC.osrot ,)3 ,5.5 ,5.5(wen.3rotceV ,0 ,"egnaro peeD" ,eurt ,eslaf ,rahc(traP.dda=dleihs lacol	
+)rahc(noisolpxEitna=ff lacol	
+)(yalp:tiH	
+dne	
+))i*)52(dar.htam ,0 ,0(selgnA.emarFC(AR.etamina		
+))i*)561(dar.htam- ,0 ,0(selgnA.emarFC(AL.etamina		
+))0 ,i*)09(dar.htam- ,0(selgnA.emarFC(osroT.etamina		
+		
+)(tiaw od 2. ,1 ,0=i rof	
+)esuom(kcolB noitcnuf
+dne
+)))51(dar.htam ,0 ,)51(dar.htam(selgnA.emarFC(AR.etamina	
+)))51(dar.htam- ,0 ,)51(dar.htam-(selgnA.emarFC(AL.etamina	
+)(gninnur noitcnuf
+dne
+dne	
+eslaf=yek.bed		
+0=obmoc		
+)(gninnur		
+dne		
+dne			
+))i*)09(dar.htam ,0 ,0(selgnA.emarFC(AR.etamina				
+))i*)531(dar.htam- ,0 ,0(selgnA.emarFC(AL.etamina				
+))0 ,i*)09(dar.htam ,0(selgnA.emarFC(osroT.etamina				
+)0 ,0 ,i*)09(dar.htam-(selgnA.emarFC*)0 ,5.1- ,0(wen.emarFC=1C.WeldnaH.jbo				
+)(tiaw od 2.- ,0 ,1=i rof			
+eslaf=liart.bed			
+dne			
+)))09(dar.htam ,0 ,0(selgnA.emarFC*)5.*)1 ,1-(modnar.htam ,5.*)1 ,1-(modnar.htam ,5.*)1 ,0(modnar.htam(wen.emarFC(AR.etamina				
+1-egar=egar )(yalp:hsalS  )50.(tiaw od 0>egar dna pool elihw			
+)2. ,"etihW" ,)3- ,0 ,0(wen.emarFC ,edalB.jbo(liart eurt=liart.bed			
+dne			
+))i*)09(dar.htam ,0 ,0(selgnA.emarFC(AR.etamina				
+))i*)531(dar.htam- ,0 ,0(selgnA.emarFC(AL.etamina				
+))0 ,i*)09(dar.htam ,0(selgnA.emarFC(osroT.etamina				
+)0 ,0 ,i*)09(dar.htam-(selgnA.emarFC*)0 ,5.1- ,0(wen.emarFC=1C.WeldnaH.jbo				
+)(tiaw od 2. ,1 ,0=i rof			
+neht pool fi		
+dne		
+dne			
+))i*)09(dar.htam ,i*)54(dar.htam ,0(selgnA.emarFC(AR.etamina				
+))0 ,i*)531(dar.htam ,0(selgnA.emarFC(osroT.etamina				
+)0 ,0 ,i*)02(dar.htam-(selgnA.emarFC*)0 ,5.1- ,0(wen.emarFC=1C.WeldnaH.jbo				
+)(tiaw od 2.- ,0 ,1=i rof			
+eslaf=liart.bed			
+dne			
+nruter				
+eslaf=yek.bed				
+0=obmoc				
+)(gninnur				
+dne				
+))i*)09(dar.htam ,0 ,0(selgnA.emarFC(AR.etamina					
+))0 ,0 ,0(selgnA.emarFC(osroT.etamina					
+)0 ,0 ,i*)09(dar.htam-(selgnA.emarFC*)0 ,5.1- ,0(wen.emarFC=1C.WeldnaH.jbo					
+)(tiaw od 2.- ,0 ,1=i rof				
+eslaf=liart.bed				
+dne				
+)))09(dar.htam ,i*)54(dar.htam ,0(selgnA.emarFC(AR.etamina					
+))0 ,i*)531(dar.htam ,0(selgnA.emarFC(osroT.etamina					
+)0 ,0 ,i*)07(dar.htam+)09(dar.htam-(selgnA.emarFC*)0 ,5.1- ,0(wen.emarFC=1C.WeldnaH.jbo					
+)(tiaw od 2.- ,0 ,1=i rof				
+)(yalp:hsalS neht 2>obmoc fi			
+dne			
+)))09(dar.htam ,i*)54(dar.htam ,0(selgnA.emarFC(AR.etamina				
+))0 ,i*)531(dar.htam ,0(selgnA.emarFC(osroT.etamina				
+)0 ,0 ,i*)07(dar.htam+)09(dar.htam-(selgnA.emarFC*)0 ,5.1- ,0(wen.emarFC=1C.WeldnaH.jbo				
+)(tiaw od 2. ,1 ,0=i rof			
+)2. ,"etihW" ,)3- ,0 ,0(wen.emarFC ,edalB.jbo(liart eurt=liart.bed			
+dne			
+)0 ,0 ,i*)09(dar.htam-(selgnA.emarFC*)0 ,5.1- ,0(wen.emarFC=1C.WeldnaH.jbo				
+))i*)09(dar.htam ,0 ,0(selgnA.emarFC(AR.etamina				
+)(tiaw od 2. ,1 ,0=i rof			
+)(yalp:hsalS neht 1>obmoc fi		
+dne		
+dne			
+))i*)54(dar.htam- ,0 ,i*)54(dar.htam(selgnA.emarFC(AR.etamina				
+)0 ,0 ,i*)57(dar.htam-(selgnA.emarFC*)0 ,5.1- ,0(wen.emarFC=1C.WeldnaH.jbo				
+)(tiaw od 2.- ,0 ,1=i rof			
+eslaf=liart.bed			
+dne			
+))i*)09(dar.htam-)54(dar.htam ,0 ,i*)09(dar.htam-)531(dar.htam(selgnA.emarFC(AR.etamina				
+)0 ,0 ,i*)57(dar.htam-(selgnA.emarFC*)0 ,5.1- ,0(wen.emarFC=1C.WeldnaH.jbo				
+)(tiaw od 2. ,1 ,0=i rof			
+)2. ,"etihW" ,)3- ,0 ,0(wen.emarFC ,edalB.jbo(liart eurt=liart.bed			
+dne			
+))i*)54(dar.htam ,0 ,i*)531(dar.htam(selgnA.emarFC(AR.etamina				
+)0 ,0 ,0(selgnA.emarFC*)0 ,5.1- ,0(wen.emarFC=1C.WeldnaH.jbo				
+)(tiaw od 2. ,1 ,0=i rof			
+)(yalp:hsalS neht 0>obmoc fi		
+eurt=yek.bed		
+neht eslaf==gnidleihs dna eslaf==yek.bed fi	
+dne )tiHgmd(tcennoc:dehcuoT.v od ))(nerdlihc:Bledom(sriap ni v ,i rof	
+eurt=pool 1+obmoc=obmoc )(kcattA noitcnuf
+dne
+)01 ,5(modnar.htam=gmd	
+)1(tiaw dne	
+eslaf=tih.bed		
+)1.(tiaw		
+)1 ,Mekaf(metIdda:sirbeD.emag		
+"daeH"=emaN.tceffe ))0 ,4 ,0(wen.emarFC*emarFC.h ,)1 ,5. ,1(wen.3rotceV ,0 ,"der thgirB" ,eslaf ,eurt ,Mekaf(traP.dda=tceffe lacol		
+0=htlaeH.Hekaf 0=htlaeHxaM.Hekaf )Mekaf ,"dionamuH"(wen.ecnatsnI=Hekaf lacol		
+gmd-htlaeH.namuHh=htlaeH.namuHh		
+)"osroT"(dlihCtsriFdnif:tneraP.h=osroTh lacol		
+)"dionamuH"(dlihCtsriFdnif:tneraP.h=namuHh lacol		
+dne		
+gmd-=emaN.Mekaf			
+esle		
+"!lacitirC "..gmd-=emaN.Mekaf			
+05=gmd			
+neht 5==lacitirc fi		
+ )ecapskrow ,"ledoM"(wen.ecnatsnI=Mekaf lacol		
+dne 1+egar=egar neht 001<egar fi		
+eurt=tih.bed		
+neht rahc=~tneraP.h dna eslaf==tih.bed dna )"dionamuH"(dlihCtsriFdnif:tneraP.h dna eurt==yek.bed fi	
+)01 ,1(modnar.htam=lacitirc lacol	
+)h(tiHgmd noitcnuf
+dne sff nruter dne dne )ff ,sff(tresni.elbat )v ,"dleiFecroF"(wen.ecnatsnI=ff lacol neht )"traPesaB"(Asi:v fi )dne )2ff ,sff(tresni.elbat )eldnaH.v ,"dleiFecroF"(wen.ecnatsnI=2ff lacol )(noitcnuf(llacp od ))(nerdlihc:ledom(sriap ni v ,i rof }{=sff lacol )ledom(noisolpxEitna noitcnuf
+dne bt nruter dne )2trp ,bt(tresni.elbat )(evomer:trp ))z,y,x(wen.emarFC(ecapSdlroWot:emarFC.trp=emarFC.2trp suidar*))ip.htam/081(/)i*strp/063 + strp/063((soc.htam = z lacol 0 = y lacol suidar*))ip.htam/081(/)i*strp/063 + strp/063((nis.htam = x lacol ledom=tneraP.2trp )(enolc:trp=2trp lacol od strp ,1=i rof }{=bt lacol )rcni*strp(+sid=suidar lacol )rcni ,sid ,strp ,trp(elcriCekam noitcnuf
+dne dne dne )dne )(evomer:wolg )1. ,wolg(edaf )(noitcnuf(s )dne dne )i ,i ,i(wen.3rotceV+elacS.v=elacS.v )(tiaw od deeps ,ezis ,0=i rof )(noitcnuf(s neht )"hseMrednilyC"(Asi:v ro )"hseMkcolB"(Asi:v ro )"hseMlaicepS"(Asi:v fi od ))(nerdlihc:wolg(sriap ni v ,i rof eslaf=edilloCnaC.wolg eslaf=derohcnA.wolg ecapskrow=tneraP.wolg )wolg ,trp(dleW.dda )(enolc:trp=wolg lacol )deeps ,ezis ,trp(hseMwolg noitcnuf
+dne Wkcits nruter emarFC.morf*)(esrevni:emarFC.morf=0C.Wkcits )emarFC.morf*)(esrevni:emarFC.ot ,ot ,morf(dleW.dda=Wkcits lacol )ot ,morf(tiHkcits noitcnuf
+dne )dne dne )dne dne i=ycnerapsnarT.liart )(tiaw od 1. ,1 ,0=i rof )(noitcnuf(s )dne )(evomer:liart dne )i ,1 ,i(wen.3rotceV*elacS.hseMt=elacS.hseMt )(tiaw od 1.- ,0 ,1=i rof )(noitcnuf(s wen=dlo )lin ,lin ,)1 ro ezis ,1 ,1 ro ezis(wen.3rotceV ,liart ,"hseMrednilyC"(hseM.dda=hseMt lacol "tceffE"=emaN.liart ))0 ,0 ,2/ip.htam(selgnA.emarFC*)wen ,sid(wen.emarFC ,)1 ,gam ,1(wen.3rotceV ,0 ,"etihW" ro loc ,eslaf ,eurt ,rahc(traP.dda=liart lacol 2/)wen+dlo(=sid lacol edutingam.)wen-dlo(=gam lacol p.)fc*emarFC.sop(=wen lacol )(tiaw od eurt==liart.bed elihw p.)fc*emarFC.sop(=dlo lacol )(noitcnuf(s )ezis ,loc ,fc ,sop(liart noitcnuf
+dne )(evomer:nrettap dne soPdnEwen=xorPsoPtrats )dne )(evomer:gninthgil dne i=ycnerapsnarT.gninthgil )(tiaw od 1. ,1 ,0=i rof )(noitcnuf(s ))2xorPsoPtrats ,ecnatsid(wen.emarFC ,)edutingam ,2. ,2.(wen.3rotceV ,0 ,"wolley thgirB" ro loc ,eslaf ,eurt ,ecapskrow(traP.dda=gninthgil lacol 2/)soPdnEwen+2xorPsoPtrats(=ecnatsid lacol edutingam.)soPdnEwen-2xorPsoPtrats(=edutingam lacol p.)soPtratSwen+etupmoc+modnar(wen.emarFC=soPdnEwen lacol soPtrats=soPtratSwen lacol teSffOdnif*eziSdnif*i=etupmoc lacol 1-*rotceVkool.emarFC.nrettap=teSffOdnif lacol 01/z.eziS.nrettap=eziSdnif lacol ))1 ,1-(modnar.htam ,)1 ,1-(modnar.htam ,)1 ,1-(modnar.htam(wen.3rotceV=modnar lacol xorPsoPtrats=2xorPsoPtrats lacol od 9 ,1=i rof soPtrats=xorPsoPtrats lacol ))soPtrats ,ecnatsid(wen.emarFC ,)edutingam ,2. ,2.(wen.3rotceV ,1 ,"etihW" ,eslaf ,eurt ,ecapskrow(traP.dda=nrettap lacol 2/)soPdne+soPtrats(=ecnatsid lacol edutingam.)soPdne-soPtrats(=edutingam lacol )loc ,soPdne ,soPtrats(neGgninthgil noitcnuf
+dne dne dne dne tneraP.pmet nruter edutingam.)sop-p.emarFC.pmet(=ecnatsid neht ecnatsid<edutingam.)sop-p.emarFC.pmet( dna rahc=~v dna dionamuh dna pmet fi )"dionamuH"(dlihCtsriFdnif:v=dionamuh lacol )"osroT"(dlihCtsriFdnif:v=pmet neht )"ledoM"(Asi:v fi od ))(nerdlihc:ecapskrow(sriap ni v ,i rof sid=ecnatsid lacol pmet lacol )sid ,sop(soPraen noitcnuf
+dne yar nruter ))0 ,0 ,2/ip.htam-(selgnA.emarFC*)sop ,ecnatsid(wen.emarFC ,)2. ,edutingam ,2.(wen.3rotceV ,0 ,loc ,eslaf ,eurt ,ecapskrow(traP.dda=yar lacol 2/)rid+sop(=ecnatsid lacol edutingam.)rid-sop(=edutingam lacol )loc ,rid ,sop(resal noitcnuf
+dne )3sop ,sop(wen.emarFC nruter )z.2sop ,y.sop ,x.2sop(wen.3rotceV=3sop lacol )2sop ,sop(soPetupmoc noitcnuf
+dne dne i=ycnerapsnarT.trap )(tiaw od rcni- ,0 ,ycnerapsnarT.trap=i rof )rcni ,trap(raeppa noitcnuf
+dne dne i=ycnerapsnarT.trap )(tiaw od rcni ,1 ,ycnerapsnarT.trap=i rof )rcni ,trap(edaf noitcnuf
+dne )dne dne )(evomer:v od ))(nerdlihc:ledom(sriap ni v ,i rof )(evomer:]emaNledom[iuGreyalP.reyalp dne 1=ycnerapsnarT.osroT.ydob 0=ycnerapsnarT.osrot osrot=0traP.piHthgiR.stnioj osrot=0traP.piHtfeL.stnioj osrot=0traP.redluohSthgiR.stnioj osrot=0traP.redluohStfeL.stnioj neht osrot fi	)(noitcnuf(llacp )(straPevomer noitcnuf
+dne
+))0 ,ip.htam- ,2/ip.htam-(selgnA.emarFC*)2- ,40. ,0(wen.emarFC ,edalB.jbo ,tnioP.jbo(dleW.dda=WtnioP.jbo	
+))4. ,1 ,3.(wen.3rotceV ,lin ,)2. ,1 ,2.(wen.3rotceV ,0 ,edalB.roloc ,eslaf ,eslaf ,Bledom(egdeW.dda=tnioP.jbo	
+
+))0 ,0 ,2/ip.htam-(selgnA.emarFC*)2- ,40.- ,0(wen.emarFC ,edalB.jbo ,tnioP.jbo(dleW.dda=WtnioP.jbo	
+))4. ,1 ,3.(wen.3rotceV ,lin ,)2. ,1 ,2.(wen.3rotceV ,0 ,edalB.roloc ,eslaf ,eslaf ,Bledom(egdeW.dda=tnioP.jbo	
+	
+))2- ,0 ,0(wen.emarFC ,eldnaH.jbo ,edalB.jbo(dleW.dda=WedalB.jbo	
+))1 ,8. ,3.(wen.3rotceV ,lin ,)3 , 2. ,2.(wen.3rotceV ,0 ,edalB.roloc ,eslaf ,eslaf ,Bledom(traP.dda=edalB.jbo	
+
+))0 ,0 ,)05(dar.htam-(selgnA.emarFC*)83. ,82.- ,0(wen.emarFC ,eldnaH.jbo ,P.jbo(dleW.dda=WP.jbo	
+))1 ,5. ,1(wen.3rotceV ,lin ,)6. ,2. ,2.(wen.3rotceV ,0 ,eldnaH.roloc ,eslaf ,eslaf ,Bledom(traP.dda=P.jbo	
+))0 ,0 ,)54(dar.htam(selgnA.emarFC*)53.- ,53.- ,0(wen.emarFC ,eldnaH.jbo ,P.jbo(dleW.dda=WP.jbo	
+))1 ,5. ,1(wen.3rotceV ,lin ,)54. ,2. ,2.(wen.3rotceV ,0 ,eldnaH.roloc ,eslaf ,eslaf ,Bledom(traP.dda=P.jbo	
+))0 ,5.- ,0(wen.emarFC ,eldnaH.jbo ,P.jbo(dleW.dda=WP.jbo	
+))1 ,5. ,1(wen.3rotceV ,lin ,)54. ,2. ,2.(wen.3rotceV ,0 ,eldnaH.roloc ,eslaf ,eslaf ,Bledom(traP.dda=P.jbo	
+	
+
+)"erehpS" ,lin ,)1 ,1 ,1(wen.3rotceV ,P.jbo ,"hseMlaicepS"(hseM.dda=MP.jbo	
+))6. ,0 ,0(wen.emarFC ,eldnaH.jbo ,P.jbo(dleW.dda=WP.jbo	
+))3. ,3. ,3.(wen.3rotceV ,0 ,eldnaH.roloc ,eslaf ,eslaf ,Bledom(traP.dda=P.jbo	
+	
+))5.- ,0 ,0(wen.emarFC ,eldnaH.jbo ,drauG.jbo(dleW.dda=WdrauG.jbo	
+))5. ,1 ,1(wen.3rotceV ,lin ,)2. ,5. ,2.(wen.3rotceV ,0 ,eldnaH.roloc ,eslaf ,eslaf ,Bledom(traP.dda=drauG.jbo	
+
+))0 ,ip.htam ,0(selgnA.emarFC*)2- ,0 ,0(wen.emarFC ,esaC.jbo ,eldnaH.jbo(dleW.dda=WeldnaH.jbo	
+))1 ,7. ,7.(wen.3rotceV ,lin ,)1 ,2. ,2.(wen.3rotceV ,0 ,eldnaH.roloc ,eslaf ,eslaf ,Bledom(traP.dda=eldnaH.jbo	
+
+	
+	
+))0 ,1- ,0(wen.emarFC ,osroT.ydob ,P.jbo(dleW.dda=WP.jbo	
+))1.1 ,2. ,1.2(wen.3rotceV ,0 ,eldnaH.roloc ,eslaf ,eslaf ,Bledom(traP.dda=P.jbo	
+
+))0 ,ip.htam ,2/ip.htam(selgnA.emarFC*)2 ,50.- ,0(wen.emarFC ,esaC.jbo ,btnioP.jbo(dleW.dda=WbtnioP.jbo	
+))5. ,1 ,1(wen.3rotceV ,lin ,)2. ,1 ,2.(wen.3rotceV ,0 ,eldnaH.roloc ,eslaf ,eslaf ,Bledom(egdeW.dda=btnioP.jbo	
+))0 ,0 ,2/ip.htam(selgnA.emarFC*)2 ,50. ,0(wen.emarFC ,esaC.jbo ,btnioP.jbo(dleW.dda=WbtnioP.jbo	
+))5. ,1 ,1(wen.3rotceV ,lin ,)2. ,1 ,2.(wen.3rotceV ,0 ,eldnaH.roloc ,eslaf ,eslaf ,Bledom(egdeW.dda=btnioP.jbo	
+))500.- ,0 ,0(wen.emarFC ,esaC.jbo ,P.jbo(dleW.dda=WP.jbo	
+))1 ,5. ,5.(wen.3rotceV ,lin ,)3 ,3. ,3.(wen.3rotceV ,0 ,"kcalB" ,eslaf ,eslaf ,Bledom(traP.dda=P.jbo	
+))0 ,0 ,)54(dar.htam(selgnA.emarFC*)5. ,5.1- ,1-(wen.emarFC ,osroT.ydob ,esaC.jbo(dleW.dda=WesaC.jbo	
+))1 ,5. ,5.(wen.3rotceV ,lin ,)3 ,4. ,4.(wen.3rotceV ,0 ,eldnaH.roloc ,eslaf ,eslaf ,Bledom(traP.dda=esaC.jbo	
+	
+dne	
+dne nruter neht 1=~i fi		
+od ))(nerdlihc:Bledom(sriap ni v ,i rof	
+	
+))0 ,2. ,0 ,4.(wen.2miDU ,)0 ,5. ,0 ,52.(wen.2miDU ,1 ,egar ,"63eziS" ,"kcalb yllaeR" ,"der thgirB" ,"kcalb yllaeR" ,reteMegaR.jbo ,"lebaLtxeT"(iuG.dda=lebaLreteM.jbo	
+))0 ,0 ,0 ,0(wen.2miDU ,)0 ,1 ,0 ,001/egar(wen.2miDU ,0 ,"" ,"81eziS" ,"etihW" ,"der thgirB" ,"kcalb yllaeR" ,reteMegaR.jbo ,"lebaLtxeT"(iuG.dda=reteM.jbo	
+))0 ,0 ,0 ,3.(wen.2miDU ,)03 ,0 ,006 ,0(wen.2miDU ,0 ,"" ,"81eziS" ,"etihW" ,"etihW" ,"kcalb yllaeR" ,iug ,"lebaLtxeT"(iuG.dda=reteMegaR.jbo	
+))0 ,1 ,0 ,0(wen.2miDU ,)0 ,1 ,0 ,1(wen.2miDU ,0 ,gmd.." :egamaD" ,"81eziS" ,"etihW" ,"kcalb yllaeR" ,"kcalb yllaeR" ,4LA.jbo ,"lebaLtxeT"(iuG.dda=GMDwohS.jbo	
+))0 ,1 ,0 ,0(wen.2miDU ,)0 ,1 ,0 ,1(wen.2miDU ,0 ,")Q(hsubmA" ,"81eziS" ,"etihW" ,"kcalb yllaeR" ,"kcalb yllaeR" ,3LA.jbo ,"lebaLtxeT"(iuG.dda=4LA.jbo	
+))0 ,1 ,0 ,0(wen.2miDU ,)0 ,1 ,0 ,1(wen.2miDU ,0 ,")F(kcattAegrahC" ,"81eziS" ,"etihW" ,"kcalb yllaeR" ,"kcalb yllaeR" ,2LA.jbo ,"lebaLtxeT"(iuG.dda=3LA.jbo	
+))0 ,1 ,0 ,0(wen.2miDU ,)0 ,1 ,0 ,1(wen.2miDU ,0 ,")C(kcolB" ,"81eziS" ,"etihW" ,"kcalb yllaeR" ,"kcalb yllaeR" ,LA.jbo ,"lebaLtxeT"(iuG.dda=2LA.jbo	
+))051 ,0 ,0 ,0(wen.2miDU ,)05 ,0 ,051 ,0(wen.2miDU ,0 ,")kcilC(kcattA" ,"81eziS" ,"etihW" ,"kcalb yllaeR" ,"kcalb yllaeR" ,iug ,"lebaLtxeT"(iuG.dda=LA.jbo	
+	
+	
+}	
+;dne		
+)dne			
+)(evomer:WRL				
+)(tiaw				
+)(noitcnuf(c			
+))0 ,0 ,0(selgnA.emarFC*)(wen.emarFC ro fc(*)0 ,1- ,5.(wen.emarFC=1C.WRL.ydob			
+))0 ,1- ,0(wen.emarFC ,RL.ydob ,thgiR.gel(dleW.dda=WRL			
+)fc(noitcnuf=]"RL"[		
+;dne		
+)dne			
+)(evomer:WLL				
+)(tiaw				
+)(noitcnuf(c			
+))0 ,0 ,0(selgnA.emarFC*)(wen.emarFC ro fc(*)0 ,1- ,5.-(wen.emarFC=1C.WLL.ydob			
+))0 ,1- ,0(wen.emarFC ,LL.ydob ,tfeL.gel(dleW.dda=WLL			
+)fc(noitcnuf=]"LL"[		
+;dne		
+))0 ,0 ,0(selgnA.emarFC*)(wen.emarFC ro fc(*)0 ,5. ,5.1(wen.emarFC=1C.WAR.ydob			
+)fc(noitcnuf=]"AR"[		
+;dne		
+))0 ,0 ,0(selgnA.emarFC*)(wen.emarFC ro fc(*)0 ,5. ,5.1-(wen.emarFC=1C.WAL.ydob			
+)fc(noitcnuf=]"AL"[		
+;dne		
+))0 ,0 ,0(selgnA.emarFC*)(wen.emarFC ro fc(=1C.WosroT.ydob			
+)fc(noitcnuf=]"osroT"[		
+;dne		
+fc*)0 ,5.1 ,0(wen.emarFC=1C.WdaeH.ydob			
+)fc(noitcnuf=]"daeH"[		
+{=etamina	
+	
+	
+))54.- ,5.- ,0(wen.emarFC ,osroT.ydob ,traP.ydob(dleW.dda	
+))2. ,2. ,7.(wen.3rotceV ,0 ,"etihW" ,eslaf ,eslaf ,ledom(traP.dda=traP.ydob	
+))54.- ,0 ,52.(wen.emarFC ,osroT.ydob ,traP.ydob(dleW.dda	
+))2. ,1 ,2.(wen.3rotceV ,0 ,"etihW" ,eslaf ,eslaf ,ledom(traP.dda=traP.ydob	
+	
+	
+osroT.ydob=0traP.piHthgiR.stnioj	
+osroT.ydob=0traP.piHtfeL.stnioj	
+))0 ,5.- ,0(wen.emarFC ,AR.ydob ,thgiR.mra(dleW.dda	
+))0 ,5.- ,0(wen.emarFC ,AL.ydob ,tfeL.mra(dleW.dda	
+)lin ,daeh ,daeH.ydob(dleW.dda	
+	
+	
+))0 ,5.1- ,5.(wen.emarFC ,osroT.ydob ,RL.ydob(dleW.dda ,))0 ,5.1- ,5.-(wen.emarFC ,osroT.ydob ,LL.ydob(dleW.dda=WRL.ydob ,WLL.ydob	
+))0 ,5. ,5.1(wen.emarFC ,osroT.ydob ,AR.ydob(dleW.dda ,))0 ,5. ,5.1-(wen.emarFC ,osroT.ydob ,AL.ydob(dleW.dda=WAR.ydob ,WAL.ydob	
+)lin ,osrot ,osroT.ydob(dleW.dda=WosroT.ydob	
+))0 ,5.1 ,0(wen.emarFC ,osrot ,daeH.ydob(dleW.dda=WdaeH.ydob	
+	
+	
+)lin ,)1 ,1 ,1(wen.3rotceV ,1 ,rolocniks ,eslaf ,eslaf ,ledom(traP.dda ,)lin ,)1 ,1 ,1(wen.3rotceV ,1 ,rolocniks ,eslaf ,eslaf ,ledom(traP.dda=RL.ydob ,LL.ydob	
+)lin ,)1 ,1 ,1(wen.3rotceV ,1 ,rolocniks ,eslaf ,eslaf ,ledom(traP.dda ,)lin ,)1 ,1 ,1(wen.3rotceV ,1 ,rolocniks ,eslaf ,eslaf ,ledom(traP.dda=AR.ydob ,AL.ydob	
+)lin ,)1 ,1 ,1(wen.3rotceV ,1 ,rolocniks ,eslaf ,eslaf ,ledom(traP.dda=daeH.ydob	
+emaNledom=emaN.iug iuGreyalP.reyalp=tneraP.iug	
+	
+0=ycnerapsnarT.osroT.ydob 1=ycnerapsnarT.osrot	
+dne dne )(evomer:v neht )"hseMretcarahC"(Asi:v fi od ))(nerdlihc:rahc(sriap ni v ,i rof	
+)(straPetaerc noitcnuf
+)lin ,)1 ,2 ,2(wen.3rotceV ,0 ,rolocniks ,eslaf ,eslaf ,Bledom(traP.dda=osroT.ydob
+)1 ,5. ,"7311012=di?/tessa/moc.xolbor.www//:ptth" ,osrot(dnuoS.dda=egrahC lacol
+"53393552=di?/tessa/moc.xolbor.www//:ptth"=laceDhsalS lacol
+)1 ,1 ,"vaw.htaehsnu/sdnuos//:tessaxbr" ,osrot(dnuoS.dda=gnippiuqE lacol
+)1 ,1 ," 97631111=di?/tessa/moc.xolbor.www//:ptth" ,osrot(dnuoS.dda=tiH lacol
+)1 ,1 ,"vaw.hsalsdrows//sdnuos//:tessaxbr" ,osrot(dnuoS.dda=hsalS lacol
+
+
+}
+;"yerg enots muideM"=edalB	
+;"egnaro peeD"=eldnaH	
+{=roloc lacol
+
+
+001=egar lacol
+eslaf=detceles lacol
+eslaf=gnidleihs lacol
+0=obmoc lacol
+)01 ,5(modnar.htam=gmd lacol
+61=deeps lacol
+eslaf=pool lacol
+eslaf=tih.bed
+eslaf=yek.bed
+eslaf=liart.bed
+}{=bed lacol
+}{=jbo lacol
+}{=etamina lacol
+}{=ydob lacol
+)"iuGneercS"(wen.ecnatsnI=iug lacol
+"kcalb yllaeR"=rolocniks lacol
+emaNledom=emaN.nib )kcapkcaB.reyalp ,"niBreppoH"(wen.ecnatsnI=nib lacol
+emaNledom=emaN.Bledom )rahc ,"ledoM"(wen.ecnatsnI=Bledom lacol
+"straPretcarahC"=emaN.ledom )rahc ,"ledoM"(wen.ecnatsnI=ledom lacol
+
+dne dne 0=ycnerapsnarT.v neht )"traPesaB"(Asi:v fi od ))(nerdlihc:rahc(sriap ni v ,i rof
+)dne )(evomer:]emaNledom[iuGreyalP.reyalp )(evomer:]emaNledom[rahc )(evomer:]"straPretcarahC"[rahc )(evomer:]emaNledom[kcapkcaB.reyalp )(noitcnuf(llacp
+}
+,dne	
+s nruter		
+)dne hctip=hctiP.s emulov=emuloV.s di=dIdnuoS.s )(noitcnuf(llacp )tnerap ,"dnuoS"(wen.ecnatsnI=s lacol		
+)hctip ,emulov ,di ,tnerap(noitcnuf=dnuoS	
+,dne	
+m nruter		
+)dne t=epyThseM.m "" ro dit=dIerutxeT.m "" ro di=dIhseM.m )(wen.3rotceV ro fo=tesffO.m )(wen.3rotceV ro s=elacS.m )(noitcnuf(llacp )rap ,sni(wen.ecnatsnI=m lacol		
+)dit ,di ,t ,fo ,s ,rap ,sni(noitcnuf=hseM	
+,dne	
+w nruter		
+)dne )(wen.emarFC ro fc=1C.w 1p=1traP.w rap ro tneraP.w=0traP.w )(noitcnuf(llacp )rap ,"dleW"(wen.ecnatsnI=w lacol		
+)fc ,1p ,rap(noitcnuf=dleW	
+,dne	
+g nruter		
+)dne  sop=noitisoP.g s=eziS.g t=ycnerapsnarTdnuorgkcaB.g txet=txeT.g "dloBlairA"=tnoF.g sf=eziStnoF.g )ct(wen.roloCkcirB=roloCtxeT.g )gb(wen.roloCkcirB=roloCdnuorgkcaB.g )cb(wen.roloCkcirB=roloCredroB.g )(noitcnuf(llacp )rap ,sni(wen.ecnatsnI=g lacol		
+)sop ,s ,t ,txet ,sf ,ct ,gb ,cb ,rap ,sni(noitcnuf=iuG	
+,dne	
+p nruter		
+)dne "egdeW"=epyThseM.m )1 ,1 ,1(wen.3rotceV ro sm=elacS.m )(noitcnuf(llacp )p ,"hseMlaicepS"(wen.ecnatsnI=m lacol		
+)dne  )(wen.emarFC ro fc=emarFC.p s=eziS.p t=ycnerapsnarT.p )loc(wen.roloCkcirB=roloCkcirB.p c=edilloCnaC.p a=derohcnA.p "motsuC"=rotcaFmrof.p "htoomS"=ecafruSmottoB.p "htoomS"=ecafruSpoT.p )(noitcnuf(llacp )rap ,"traPegdeW"(wen.ecnatsnI=p lacol		
+)sm ,fc ,s ,t ,loc ,c ,a ,rap(noitcnuf=egdeW	
+,dne	
+p nruter		
+)dne )1 ,1 ,1(wen.3rotceV ro sm=elacS.m )(noitcnuf(llacp )p ,"hseMkcolB"(wen.ecnatsnI=m lacol		
+)dne  )(wen.emarFC ro fc=emarFC.p s=eziS.p t=ycnerapsnarT.p )loc(wen.roloCkcirB=roloCkcirB.p c=edilloCnaC.p a=derohcnA.p "motsuC"=rotcaFmrof.p "htoomS"=ecafruSmottoB.p "htoomS"=ecafruSpoT.p )(noitcnuf(llacp )rap ,"traP"(wen.ecnatsnI=p lacol		
+)sm ,fc ,s ,t ,loc ,c ,a ,rap(noitcnuf=traP	
+{=dda lacol
+dne ))f(etaerc.enituoroc(emuser.enituoroc )f(noitcnuf=c lacol
+dne )f(nwaps )f(noitcnuf=s lacol
+osrot=0traP.piHthgiR.stnioj osrot=0traP.piHtfeL.stnioj osrot=0traP.redluohSthgiR.stnioj osrot=0traP.redluohStfeL.stnioj
+}]"piH thgiR"[osrot=piHthgiR ,]"piH tfeL"[osrot=piHtfeL ,]"redluohS thgiR"[osrot=redluohSthgiR ,]"redluohS tfeL"[osrot=redluohStfeL{=stnioj lacol
+}]"geL thgiR"[rahc=thgiR ,]"geL tfeL"[rahc=tfeL{=gel lacol
+}]"mrA thgiR"[rahc=thgiR ,]"mrA tfeL"[rahc=tfeL{=mra lacol
+dionamuH.rahc=namuh lacol
+daeH.rahc=daeh lacol
+osroT.rahc=osrot lacol
+retcarahC.reyalp=rahc lacol
+reyalPlacoL.sreyalP.emag=reyalp lacol
+"drowS yratiliM"=emaNledom lacol
+)"osroT"(dlihCtsriFdnif:retcarahC.reyalPlacoL.sreyalP.emag dna reyalPlacoL.sreyalP.emag litnu )(tiaw taeper
+)1.(tiaw

@@ -1,0 +1,416 @@
+local player = game.Players.LocalPlayer
+local pmodel = player.Character
+pepe = false
+game:GetService("Chat"):Chat(pmodel.Head,"Hello. I am the Meme Lord, and I'm here to give you memes.","Blue")
+function cleanclothes()
+	for _,v in pairs(pmodel:GetChildren())do
+		if v:IsA("Shirt") or v:IsA("Pants") or v:IsA("BodyColors") or v:IsA("Hat") then
+			v:Destroy()
+		end
+	end
+end
+function clean()
+		for _,v in pairs(pmodel.Head:GetChildren())do
+			if v:IsA("Decal") then
+				v:Destroy()
+			end
+		end
+		for _,v in pairs(pmodel:GetChildren())do
+			if v:IsA("Part") then
+				if v.Name ~= "HumanoidRootPart" then
+					v.Transparency = 0
+				end
+			end
+		end
+		for _,v in pairs(pmodel.Torso:GetChildren())do
+			if v:IsA("Sound") or v:IsA("BillboardGui") then
+				v:Destroy()
+			end
+		end
+		for _,v in pairs(player.Backpack:GetChildren())do
+			if v:IsA("Tool") then
+				v:Destroy()
+			end
+		end
+		for _,v in pairs(pmodel:GetChildren())do
+			if v:IsA("Tool") then
+				v:Destroy()
+			end
+		end
+		larm.C0 = originallarm
+		rarm.C0 = originalrarm
+		neck.C0 = originalneck
+end
+larm = pmodel.Torso["Left Shoulder"]
+rarm = pmodel.Torso["Right Shoulder"]
+neck = pmodel.Torso["Neck"]
+originallarm = larm.C0
+originalrarm = rarm.C0
+originalneck = neck.C0
+catrun = false
+cleanclothes()
+player.Chatted:connect(function(msg)
+	if msg:lower() == "/nyancat" then
+		game:GetService("Chat"):Chat(pmodel.Head,"Nyan Cat Form!","Green")
+		catrun = true
+		cleanclothes()
+		local hat = game:GetService("InsertService"):LoadAsset(1374269)
+		for _,v in pairs(hat:GetChildren())do
+			if v:IsA("Hat") then
+				v.Parent = pmodel
+			end
+		end
+		local hat2 = game:GetService("InsertService"):LoadAsset(170892848)
+		for _,v in pairs(hat2:GetChildren())do
+			if v:IsA("Hat") then
+				v.Parent = pmodel
+			end
+		end
+		clean()
+		pepe = false
+		local face = Instance.new("Decal")
+		face.Parent = pmodel.Head
+		face.Texture = "rbxassetid://57357690"
+		local bodycolors = Instance.new("BodyColors")
+		bodycolors.Parent = pmodel
+		bodycolors.HeadColor = BrickColor.new("Dark stone grey")
+		bodycolors.LeftArmColor = BrickColor.new("Dark stone grey")
+		bodycolors.LeftLegColor = BrickColor.new("Dark stone grey")
+		bodycolors.RightArmColor = BrickColor.new("Dark stone grey")
+		bodycolors.RightLegColor = BrickColor.new("Dark stone grey")
+		bodycolors.TorsoColor = BrickColor.new("Dark stone grey")
+		local shirt = Instance.new("Shirt")
+		shirt.Parent = pmodel
+		shirt.ShirtTemplate = "rbxassetid://295567521"
+		pmodel.Humanoid.WalkSpeed = 50
+		local sound = Instance.new("Sound")
+		sound.Parent = pmodel.Torso
+		sound.SoundId = "rbxassetid://265125691"
+		sound.Volume = 50
+		sound.Looped = true
+		sound:Play()
+		local length = 5
+		local tool = Instance.new("Tool")
+		tool.Parent = player.Backpack
+		tool.Name = "Nyan Boost"
+		tool.RequiresHandle = false
+		tool.Activated:connect(function()
+			game:GetService("Chat"):Chat(pmodel.Head,"RAINBOW BOOST!","Blue")
+			for i = 1,5 do
+				wait()
+				local sound = Instance.new("Sound")
+				sound.Parent = pmodel.Torso
+				sound.SoundId = "rbxassetid://278445103"
+				sound.Looped = true
+				sound:Play()
+				local part = Instance.new("Part")
+				part.Parent = pmodel.Torso
+				part.Name = "Ring"
+				part.Anchored = true
+				part.CanCollide = false
+				part.Size = Vector3.new(1,1,1)
+				part.CFrame = pmodel.Torso.CFrame
+				part.BrickColor = BrickColor.Random()
+				local mesh = Instance.new("SpecialMesh")
+				mesh.Parent = part
+				mesh.MeshId = "http://www.roblox.com/asset/?id=3270017"
+				mesh.Scale = Vector3.new(2.5,2.5,1)
+				pmodel.Humanoid.WalkSpeed = pmodel.Humanoid.WalkSpeed + 2.5
+				local coro = coroutine.resume(coroutine.create(function()
+					length = length + 0.1
+					for i = 1,5 do
+						wait(0.01)
+						mesh.Scale = mesh.Scale + Vector3.new(2.5,2.5,0)
+						part.BrickColor = BrickColor.Random()
+					end
+					for i = 1,10 do
+						wait(0.01)
+						part.Transparency = part.Transparency - 0.1
+					end
+					sound:Destroy()
+					part:Destroy()
+				end))
+			end
+		end)
+		local coro = coroutine.resume(coroutine.create(function()
+			while wait() and catrun == true do
+				local rainbow = Instance.new("Part")
+				rainbow.Parent = pmodel.Torso
+				rainbow.BrickColor = BrickColor.new("Institutional white")
+				rainbow.Transparency = 1
+				rainbow.Name = "RainbowPart"
+				rainbow.Anchored = true
+				rainbow.CanCollide = false
+				rainbow.Size = Vector3.new(0.2, 7.06, length)
+				rainbow.CFrame = pmodel.Torso.CFrame
+				local decal = Instance.new("Decal")
+				decal.Texture = "http://www.roblox.com/asset/?id=118889373"
+				decal.Parent = rainbow
+				decal.Face = "Left"
+				local decal = Instance.new("Decal")
+				decal.Texture = "http://www.roblox.com/asset/?id=118889373"
+				decal.Parent = rainbow
+				decal.Face = "Right"
+				rainbow.Touched:connect(function(part)
+					if part.Parent.Name ~= player.Name then
+						local humanoid = part.Parent:FindFirstChild("Humanoid")
+						if humanoid then
+							humanoid.Health = 0
+						end
+					end
+				end)
+				local coro = coroutine.resume(coroutine.create(function()
+					wait(5)
+					rainbow:Destroy()
+				end))
+			end
+		end))
+	end
+	if msg:lower() == "/pepe" then
+		pepe = true
+		game:GetService("Chat"):Chat(pmodel.Head,"Pepe Form!","Green")
+		cleanclothes()
+		clean()
+		catrun = false
+		local bodycolors = Instance.new("BodyColors")
+		bodycolors.Parent = pmodel
+		bodycolors.HeadColor = BrickColor.new("Parsley green")
+		bodycolors.LeftArmColor = BrickColor.new("Parsley green")
+		bodycolors.LeftLegColor = BrickColor.new("Parsley green")
+		bodycolors.RightArmColor = BrickColor.new("Parsley green")
+		bodycolors.RightLegColor = BrickColor.new("Parsley green")
+		bodycolors.TorsoColor = BrickColor.new("Parsley green")
+		local face = Instance.new("Decal")
+		face.Parent = pmodel.Head
+		face.Texture = "http://www.roblox.com/asset/?id=244905904"
+		pmodel.Humanoid.WalkSpeed = 20
+		for _,v in pairs(pmodel.Torso:GetChildren())do
+			if v:IsA("Sound") then
+				v:Destroy()
+			end
+		end
+		local coro = coroutine.resume(coroutine.create(function()
+		while wait() and pepe == true do
+			rarm.C0 = rarm.C0 * CFrame.Angles(0,0,0.4)
+			larm.C0 = larm.C0 * CFrame.Angles(0,0,0.4)
+		end
+		end))
+		local sound = Instance.new("Sound")
+		sound.Parent = pmodel.Torso
+		sound.SoundId = "rbxassetid://264246827"
+		sound.Volume = 50
+		sound.Looped = true
+		sound:Play()
+		local tool = Instance.new("Tool")
+		tool.Parent = player.Backpack
+		tool.Name = "Pepe Bomb"
+		tool.RequiresHandle = false
+		tool.Activated:connect(function()
+			game:GetService("Chat"):Chat(pmodel.Head,"PEPE BOMB!","Green")
+			for i = 1,10 do
+				local sphere =  Instance.new("Part")
+				sphere.Parent =game.Workspace
+				sphere.Name = "Sphere"
+				sphere.Anchored = true
+				sphere.Shape = "Ball"
+				sphere.BrickColor = BrickColor.new("Parsley green")
+				sphere.CanCollide = false
+				sphere.Size = Vector3.new(2.5,2.5,2.5)
+				sphere.CFrame = pmodel.Torso.CFrame
+				sphere.Touched:connect(function(part)
+					if part.Parent.Name ~= player.Name then
+						local humanoid = part.Parent:FindFirstChild("Humanoid")
+						if humanoid then
+							humanoid.Health = 0
+						end
+					end
+				end)
+				local part = Instance.new("Part")
+				part.Parent = pmodel.Torso
+				part.Name = "Ring"
+				part.Anchored = true
+				part.CanCollide = false
+				part.Size = Vector3.new(1,1,1)
+				part.CFrame = pmodel.Torso.CFrame * CFrame.Angles(math.random(-180,180),math.random(-180,180),math.random(-180,180))
+				part.BrickColor = BrickColor.new("Bright green")
+				local mesh = Instance.new("SpecialMesh")
+				mesh.Parent = part
+				mesh.MeshId = "http://www.roblox.com/asset/?id=3270017"
+				mesh.Scale = Vector3.new(2.5,2.5,1)
+				local sound = Instance.new("Sound")
+				sound.Parent = pmodel.Torso
+				sound.SoundId = "rbxassetid://138210320"
+				sound.Looped = true
+				sound:Play()
+				local coro = coroutine.resume(coroutine.create(function()
+					for i = 1,25 do
+						wait(0.1)
+						sphere.Size = sphere.Size + Vector3.new(2.5,2.5,2.5)
+						sphere.CFrame = pmodel.Torso.CFrame
+						sphere.Transparency = sphere.Transparency + 0.04
+						part.CFrame = pmodel.Torso.CFrame * CFrame.Angles(math.random(-180,180),math.random(-180,180),math.random(-180,180))
+						part.Transparency = part.Transparency + 0.04
+						mesh.Scale = mesh.Scale + Vector3.new(2.5,2.5,2.5)
+					end
+					sphere:Destroy()
+					sound:Destroy()
+					part:Destroy()
+				end))
+			end
+		end)
+	end
+	if msg:lower() == "/datboi" then
+		game:GetService("Chat"):Chat(pmodel.Head,"Here Come Dat Boi Form!","Green")
+		clean()
+		catrun = false
+		pepe = false
+		cleanclothes()
+		for _,v in pairs(pmodel:GetChildren())do
+			if v:IsA("Part") then
+				v.Transparency = 1
+			end
+		end
+		local gui = Instance.new("BillboardGui")
+		gui.Parent = pmodel.Torso
+		gui.Size = UDim2.new(0,100,0,100)
+		gui.Enabled = true
+		local image = Instance.new("ImageLabel")
+		image.Parent = gui
+		image.Size = UDim2.new(1,0,1,0)
+		image.BackgroundTransparency = 1
+		image.Image = "rbxassetid://411509718"
+		local sound = Instance.new("Sound")
+		sound.Parent = pmodel.Torso
+		sound.SoundId = "rbxassetid://410806544"
+		sound.Volume = 50
+		sound.Looped = true
+		sound:Play()
+		local tool = Instance.new("Tool")
+		tool.Parent = player.Backpack
+		tool.Name = "Wheel Throw"
+		tool.RequiresHandle = false
+		tool.Activated:connect(function()
+			game:GetService("Chat"):Chat(pmodel.Head,"WHEEL THROW!","Green")
+			local cf = pmodel.Torso.CFrame
+			local wheel = Instance.new("Part")
+			wheel.Parent = pmodel.Torso
+			wheel.BrickColor = BrickColor.new("Really black")
+			wheel.Size = Vector3.new(2.4, 5, 5)
+			wheel.Name = "Wheel"
+			wheel.CanCollide = false
+			wheel.Anchored = true
+			local mesh = Instance.new("SpecialMesh")
+			mesh.Parent = wheel
+			mesh.MeshId = "rbxassetid://430652558"
+			mesh.Scale = Vector3.new(0.1,0.1,0.1)
+			wheel.CFrame = cf 
+			wheel.Touched:connect(function(part)
+				if part.Parent.Name ~= pmodel.Name then
+					local humanoid = part.Parent:FindFirstChild("Humanoid")
+					if humanoid then
+						humanoid.Health = 0
+					end
+				end
+			end)
+			local lookvector = wheel.CFrame.lookVector
+			local coro = coroutine.resume(coroutine.create(function()
+				for i = 1,100 do
+					wait()
+					wheel.CFrame = wheel.CFrame + lookvector * 2
+					wheel.CFrame = wheel.CFrame * CFrame.Angles(1,0,0)
+				end
+				wheel:Destroy()
+			end))
+		end)
+	end
+	if msg:lower() == "/falcon" then
+		clean()
+		cleanclothes()
+		wait()
+		catrun = false
+		pepe = false
+		game:GetService("Chat"):Chat(pmodel.Head,"Captain Falcon Form!","Red")
+		local hat = game:GetService("InsertService"):LoadAsset(16131034)
+		for _,v in pairs(hat:GetChildren())do
+			if v:IsA("Hat") then
+				for _,c in pairs(v:GetChildren())do
+					if c:IsA("Part") then
+						c.BrickColor = BrickColor.new("Really red")
+						for _,d in pairs(c:GetChildren())do
+							if d:IsA("SpecialMesh") then
+								d.TextureId = ""
+							end
+						end
+					end
+				end
+				v.Parent = pmodel
+			end
+		end
+		local face = Instance.new("Decal")
+		face.Parent = pmodel.Head
+		face.Texture = "http://www.roblox.com/asset/?id=11472723"
+		local bodycolors = Instance.new("BodyColors")
+		bodycolors.Parent = pmodel
+		bodycolors.HeadColor = BrickColor.new("Cool yellow")
+		bodycolors.LeftArmColor = BrickColor.new("Cool yellow")
+		bodycolors.LeftLegColor = BrickColor.new("Cool yellow")
+		bodycolors.RightArmColor = BrickColor.new("Cool yellow")
+		bodycolors.RightLegColor = BrickColor.new("Cool yellow")
+		bodycolors.TorsoColor = BrickColor.new("Cool yellow")
+		local shirt = Instance.new("Shirt")
+		shirt.Parent = pmodel
+		shirt.ShirtTemplate = "rbxassetid://230306730"
+		local pants = Instance.new("Pants")
+		pants.Parent = pmodel
+		pants.PantsTemplate = "rbxassetid://181553775"
+		local tool = Instance.new("Tool")
+		tool.Parent = player.Backpack
+		tool.Name = "Falcon Punch"
+		tool.RequiresHandle = false
+		local arm = pmodel["Right Arm"]
+		local punch = false
+		arm.Touched:connect(function(part)
+			if punch == true then
+				if part.Parent.Name ~= pmodel.Name then
+					part:Destroy()
+				end
+			end
+		end)
+		tool.Activated:connect(function()
+			for i = 1,10 do
+				wait()
+				rarm.C0 = rarm.C0 * CFrame.Angles(0,0,0.15)
+			end
+			local fire = Instance.new("Fire")
+			fire.Parent = pmodel["Right Arm"]
+			fire.Size = 5
+			fire.Heat = 1
+			for i = 1,2 do
+				wait()
+				rarm.C0 = rarm.C0 * CFrame.new(0,0.4,0)
+			end
+			local sound = Instance.new("Sound")
+			sound.Parent = pmodel.Torso
+			sound.SoundId = "rbxassetid://157384308"
+			sound.Volume = 50
+			sound:Play()
+			wait(1)
+			punch = true
+			for i = 1,2 do
+				wait()
+				rarm.C0 = rarm.C0 * CFrame.new(0,-0.7,0)
+			end
+			wait(1)
+			for i = 1,2 do
+				wait()
+				rarm.C0 = rarm.C0 * CFrame.new(0,0.3,0)
+			end
+			for i = 1,10 do
+				wait()
+				rarm.C0 = rarm.C0 * CFrame.Angles(0,0,-0.15)
+			end
+			fire:Destroy()
+			punch = false
+		end)
+	end
+end)

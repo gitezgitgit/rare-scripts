@@ -1,0 +1,1011 @@
+--//Made by Spyro
+--//Proteus
+--[[
+	
+	=======Moves=======
+	===[Normal mode]===
+	-Q = Void's Wrath
+	-E = Void Crush
+	-R = Void Crash
+	-F = Power Punch
+	===================
+	===[Power mode]====
+	-Q = Pure Devastation
+	-E = Raining Pain
+	-R = Sonic Boom
+	-T = Controlled Devastation
+	===================
+	====[Misc Keys]====
+	-L = Switch between modes
+	-K = Teleport
+	===================
+--]]
+UserInputService = game:GetService("UserInputService")
+TweenService = game:GetService("TweenService")
+Plr = game:GetService("Players").LocalPlayer
+Colours= {BrickColor.new("Black"),BrickColor.new("Royal purple")}
+Mouse = Plr:GetMouse()
+Char = Plr.Character
+Motor6DClones = {}
+BodyPartClones = {}
+Torso = Char.Torso
+HRoot = Char.HumanoidRootPart
+LArm = Char["Left Arm"]
+RArm = Char["Right Arm"]
+LLeg = Char["Left Leg"]
+RLeg = Char["Right Leg"]
+Head = Char.Head
+Hrj = HRoot.RootJoint
+LShold = Torso["Left Shoulder"]
+RShold = Torso["Right Shoulder"]
+LHip = Torso["Left Hip"]
+RHip = Torso["Right Hip"]
+Neck = Torso.Neck
+Lscf = LShold.C0
+Rscf = RShold.C0
+Lhcf = LHip.C0
+Rhcf = RHip.C0
+Ncf = Neck.C0
+Hrjcf = Hrj.C0
+Human = Char:FindFirstChildOfClass("Humanoid")
+Rad = math.rad
+Sin = math.sin
+Random = math.random
+Floor = math.floor
+Keys = {}
+Attacking = false
+Typing = false
+Attacking = false
+SuperFly = false
+Flying = false
+Invisible = false
+Phase = false
+Anim = "Idle"
+Mode = "Normal"
+Walkspeed = 16
+Char.Animate.Disabled = true
+Human.Animator:Destroy()
+Human:RemoveAccessories()
+Char.Sound:Destroy()
+Char.Animate:Destroy()
+pcall(function()
+	Char["Body Colors"]:Destroy()
+end)
+wait(.05)
+for _,v in pairs(Char:GetChildren()) do
+	if v:IsA('Clothing') or v:IsA('Accessory') or v:IsA('Hat') then
+		v:Destroy()
+	elseif v:IsA('BasePart') then
+		v.BrickColor = BrickColor.new("Black")
+	end
+end
+function Smooth(part)
+	part.TopSurface = Enum.SurfaceType.SmoothNoOutlines
+	part.BottomSurface = Enum.SurfaceType.SmoothNoOutlines
+	part.RightSurface = Enum.SurfaceType.SmoothNoOutlines
+	part.LeftSurface = Enum.SurfaceType.SmoothNoOutlines
+	part.BackSurface = Enum.SurfaceType.SmoothNoOutlines
+	part.FrontSurface = Enum.SurfaceType.SmoothNoOutlines
+end
+function Create(Class,Parent,Name,Extra)
+	local asd = Instance.new(Class,Parent)
+	asd.Name = Name or Class
+	if asd:IsA('BasePart') then
+		Smooth(asd)
+	end
+	for i,v in pairs(Extra or {}) do
+		asd[i] = v
+	end
+	return asd
+end
+function newWeld(parent, P0, P1, C0, C1)
+  local weld = Instance.new("Motor6D", parent or P0)
+  weld.Part0 = P0
+  weld.Part1 = P1
+  weld.C0 = C0 or weld.C0
+  weld.C1 = C1 or weld.C1
+  return weld
+end
+Shirt = Create("Shirt",Char,"Shirt",{ShirtTemplate = "rbxassetid://761748165"})
+Pants = Create("Pants",Char,"Pants",{PantsTemplate = "rbxassetid://222431914"})
+Head.face.Texture = "rbxassetid://120954647"
+Bg = Create("BillboardGui",Head,"BG",{Size = UDim2.new(7,0,2,0),StudsOffset = Vector3.new(0,2,0)})
+Tl = Create("TextLabel",Bg,"TL",{Size = UDim2.new(1,0,1,0),BackgroundTransparency = 1,TextColor3 = Color3.fromRGB(85,0,127),TextScaled = true,TextStrokeTransparency = 0,Font = Enum.Font.Fantasy,Text = "Proteus"})
+Fist1 = Create("Part",Char,"Fist",{CanCollide = false,Size = Vector3.new(LArm.Size.X,LArm.Size.Y/2,LArm.Size.Z),Transparency = 1})
+FistAura1 = Create("ParticleEmitter",Fist1,"PE",{
+	Texture = "http://www.roblox.com/asset/?id=258126401",
+	Color = ColorSequence.new(Color3.fromRGB(0,0,0),Color3.fromRGB(170,0,0)),
+	LightEmission = 0.5,
+	Size = NumberSequence.new(0.719,0),
+	Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,1),NumberSequenceKeypoint.new(0.025,0.6),NumberSequenceKeypoint.new(0.05,0.5),NumberSequenceKeypoint.new(0.5,0.5),NumberSequenceKeypoint.new(0.7,0.6),NumberSequenceKeypoint.new(1,1)}),
+	Acceleration = Vector3.new(0,0,0),
+	EmissionDirection = "Top",
+	Speed = NumberRange.new(0,0),
+	Lifetime = NumberRange.new(0.6,0.8),
+	Rate = 500,
+	Rotation = NumberRange.new(-180,180),
+	RotSpeed = NumberRange.new(-50,50),
+	ZOffset = 2,
+	LockedToPart = false,
+	Enabled = false
+})
+Fist1W = newWeld(LArm,Fist1,LArm,CFrame.new(0,LArm.Size.Y/2,0))
+Fist2 = Create("Part",Char,"Fist",{CanCollide = false,Size = Vector3.new(RArm.Size.X,RArm.Size.Y/2,RArm.Size.Z),Transparency = 1})
+FistAura2 = Create("ParticleEmitter",Fist2,"PE",{
+	Texture = "http://www.roblox.com/asset/?id=258126401",
+	Color = ColorSequence.new(Color3.fromRGB(0,0,0),Color3.fromRGB(170,0,0)),
+	LightEmission = 0.5,
+	Size = NumberSequence.new(0.719,0),
+	Transparency = NumberSequence.new({NumberSequenceKeypoint.new(0,1),NumberSequenceKeypoint.new(0.025,0.6),NumberSequenceKeypoint.new(0.05,0.5),NumberSequenceKeypoint.new(0.5,0.5),NumberSequenceKeypoint.new(0.7,0.6),NumberSequenceKeypoint.new(1,1)}),
+	Acceleration = Vector3.new(0,0,0),
+	EmissionDirection = "Top",
+	Speed = NumberRange.new(0,0),
+	Lifetime = NumberRange.new(0.6,0.8),
+	Rate = 500,
+	Rotation = NumberRange.new(-180,180),
+	RotSpeed = NumberRange.new(-50,50),
+	ZOffset = 2,
+	LockedToPart = false,
+	Enabled = false
+})
+Fist2W = newWeld(RArm,Fist2,RArm,CFrame.new(0,RArm.Size.Y/2,0))
+BodyPosition = Create("BodyPosition",nil,"BP",{MaxForce = Vector3.new(0,2e8,0)})
+BodyVel = Create("BodyVelocity",nil,"BV",{MaxForce = Vector3.new(2e8,2e8,2e8),Velocity = Vector3.new(0,0,0)})
+function keyDown(key)
+	if not Attacking then--For the moves
+		if Mode == "Normal" then
+			if key == Enum.KeyCode.Q then
+				Attacking = true
+				local createEffect = true
+				coroutine.resume(coroutine.create(function()
+					repeat
+						local blast = Create("Part",workspace,"Part",{Anchored = true,CanCollide = false,CFrame = HRoot.CFrame * CFrame.new(0,-2,0),BrickColor = Colours[math.random(1,#Colours)]})
+						local mesh = Create("SpecialMesh",blast,"Mesh",{MeshId = "http://www.roblox.com/asset/?id=20329976",Scale = Vector3.new(3,1,3)})
+						blast.CFrame = blast.CFrame * CFrame.Angles(Rad(0),Rad(Random(-360,360)),Rad(0))
+						coroutine.resume(coroutine.create(function()
+							for i=0,1,0.1 do
+								mesh.Scale = mesh.Scale:lerp(Vector3.new(10,2,10),i)
+								blast.Transparency = i
+								wait()
+							end
+							blast:Destroy()
+						end))
+						game:GetService("Debris"):AddItem(blast,1)
+						wait()
+					until not createEffect
+				end))
+				coroutine.resume(coroutine.create(function()
+					repeat
+						local effect = Create("Part",workspace,"Part",{Material = "Neon",BrickColor = Colours[Random(1,#Colours)],Size = Vector3.new(2,2,2),CanCollide = false,Anchored = false,CFrame = HRoot.CFrame * CFrame.new(Random(-10,10),-2,Random(-10,10))})
+						Create("BodyVelocity",effect,"BV",{MaxForce = Vector3.new(0,2e8,0),Velocity = Vector3.new(0,10,0)})
+						coroutine.resume(coroutine.create(function()
+							for i=0,1,0.1 do
+								effect.CFrame = effect.CFrame:lerp(effect.CFrame * CFrame.Angles(Rad(Random(-360,360)),Rad(Random(-360,360)),Rad(Random(-360,360))),i)
+								effect.Transparency = i
+								wait()
+							end
+							effect:Destroy()
+						end))
+						game:GetService("Debris"):AddItem(effect,1)
+						wait()
+					until not createEffect
+				end))
+				for i=0,1,0.1 do
+					Hrj.C0 = Hrj.C0:lerp(Hrjcf * CFrame.Angles(Rad(10),Rad(0),Rad(0)),i)
+					LHip.C0 = LHip.C0:lerp(Lhcf * CFrame.Angles(Rad(-5),Rad(0),Rad(-10)),i)
+					RHip.C0 = RHip.C0:lerp(Rhcf * CFrame.Angles(Rad(-5),Rad(0),Rad(10)),i)
+					LShold.C0 = LShold.C0:lerp(Lscf * CFrame.Angles(Rad(-10),Rad(0),Rad(-20)),i)
+					RShold.C0 = RShold.C0:lerp(Rscf * CFrame.Angles(Rad(-10),Rad(0),Rad(20)),i)
+					Neck.C0 = Neck.C0:lerp(Ncf * CFrame.Angles(Rad(10),Rad(0),Rad(0)),i)
+					wait()
+				end
+				wait(1)
+				for i=0,1,0.1 do
+					Hrj.C0 = Hrj.C0:lerp(Hrjcf * CFrame.Angles(Rad(-10),Rad(0),Rad(0)),i)
+					LHip.C0 = LHip.C0:lerp(Lhcf * CFrame.Angles(Rad(-5),Rad(0),Rad(10)),i)
+					RHip.C0 = RHip.C0:lerp(Rhcf * CFrame.Angles(Rad(-5),Rad(0),Rad(-10)),i)
+					LShold.C0 = LShold.C0:lerp(Lscf * CFrame.Angles(Rad(-40),Rad(0),Rad(40)),i)
+					RShold.C0 = RShold.C0:lerp(Rscf * CFrame.Angles(Rad(-40),Rad(0),Rad(-40)),i)
+					Neck.C0 = Neck.C0:lerp(Ncf * CFrame.Angles(Rad(-10),Rad(0),Rad(0)),i)
+					wait()
+					if i>=0.8 then
+						createEffect = false
+					end
+				end
+				coroutine.resume(coroutine.create(function()
+					for _,v in pairs(workspace:GetChildren()) do
+						if v:IsA('Model') and v ~= Char and v:FindFirstChildOfClass("Humanoid") then
+							local hum = v:FindFirstChildOfClass("Humanoid")
+							local tor = v:FindFirstChild("Torso") or v:FindFirstChild("HumanoidRootPart")
+							if tor then
+								if (tor.Position-HRoot.Position).magnitude < 20 then
+									v:BreakJoints()
+								elseif (tor.Position-HRoot.Position).magnitude >= 20 and (tor.Position-HRoot.Position).magnitude <= 50 then
+									for _,b in pairs(v:GetChildren()) do
+										if b:IsA('ForceField') then
+											b:Destroy()
+										end
+									end
+									hum:TakeDamage(100-Floor((tor.Position-HRoot.Position).magnitude))
+								end
+							end
+						end
+					end
+				end))
+				for i=0,1,0.1 do
+					local part = Create("Part",Char,"Effect",{Material = "Neon",Anchored = true,CanCollide = false,Size = Vector3.new(10,10,10),CFrame = HRoot.CFrame,BrickColor = Colours[Random(1,#Colours)]})
+					coroutine.resume(coroutine.create(function()
+						for i=0,1,0.1 do
+							part.Size = part.Size:lerp(Vector3.new(20,20,20),i)
+							part.CFrame = HRoot.CFrame * CFrame.Angles(Rad(Random(-360,360)),Rad(Random(-360,360)),Rad(Random(-360,360)))
+							part.Transparency = i 
+							wait()
+						end
+						part:Destroy()
+					end))
+					wait()
+				end
+				Attacking = false
+			elseif key == Enum.KeyCode.E then
+				Attacking = true
+				local detect = true
+				local targ = nil
+				local targTor = nil
+				LArm.Touched:connect(function(h)
+					if not detect then return end
+					if h.Parent == nil then return end
+					if h:IsDescendantOf(Char) then return end
+					local hum = h.Parent:FindFirstChildOfClass("Humanoid")
+					local tor = h.Parent:FindFirstChild("Torso") or h.Parent:FindFirstChild("HumanoidRootPart")
+					if hum and tor then
+						targ = h.Parent
+						targTor = tor
+					end
+				end)
+				for i=0,1,0.1 do
+					Hrj.C0 = Hrj.C0:lerp(Hrjcf * CFrame.Angles(Rad(0),Rad(0),Rad(-90)),i)
+					LShold.C0 = LShold.C0:lerp(Lscf * CFrame.Angles(Rad(0),Rad(90),Rad(-90)),i)
+					Neck.C0 = Neck.C0:lerp(Ncf * CFrame.Angles(Rad(0),Rad(0),Rad(90)),i)
+					wait()
+				end
+				detect = false
+				coroutine.resume(coroutine.create(function()
+					if targ ~= nil and targTor ~= nil then
+						pcall(function()
+							targTor.Anchored = true
+							for i=0,1,0.1 do
+								targTor.CFrame = targTor.CFrame:lerp(HRoot.CFrame * CFrame.new(0,0,-10),i)
+								wait()
+							end
+							for _,v in pairs(targ:GetChildren()) do
+								if v:IsA('BasePart') then v.Transparency = 1 end
+							end
+							local orb = Create("Part",targ,"Part",{Anchored = true,CanCollide = false,Shape = "Ball",BrickColor = BrickColor.new("Black"),Size = Vector3.new(8,8,8),CFrame = targTor.CFrame})
+							local mesh = Create("SpecialMesh",orb,"Mesh",{MeshId = "http://www.roblox.com/Asset/?id=9982590",Scale = Vector3.new(5,5,5)})
+							game:GetService("Debris"):AddItem(orb,5)
+							for i=0,1,0.1 do
+								local orig = orb.CFrame
+								mesh.Scale = mesh.Scale:lerp(Vector3.new(0.05,0.05,0.05),i)
+								orb.CFrame = orig * CFrame.Angles(Rad(Random(-360,360)),Rad(Random(-360,360)),Rad(Random(-360,360)))
+								wait()
+							end
+							orb:Destroy()
+							targ:BreakJoints()
+							game:GetService("Debris"):AddItem(targ,1)
+						end)
+					end
+				end))
+				Attacking = false
+			elseif key == Enum.KeyCode.R then
+				Attacking = true
+				for i=0,1,0.1 do
+					Hrj.C0 = Hrj.C0:lerp(Hrjcf * CFrame.Angles(Rad(10),Rad(0),Rad(0)),i)
+					LHip.C0 = LHip.C0:lerp(Lhcf * CFrame.Angles(Rad(-5),Rad(0),Rad(-10)),i)
+					RHip.C0 = RHip.C0:lerp(Rhcf * CFrame.Angles(Rad(-5),Rad(0),Rad(10)),i)
+					LShold.C0 = LShold.C0:lerp(Lscf * CFrame.Angles(Rad(-10),Rad(0),Rad(-20)),i)
+					RShold.C0 = RShold.C0:lerp(Rscf * CFrame.Angles(Rad(-10),Rad(0),Rad(20)),i)
+					Neck.C0 = Neck.C0:lerp(Ncf * CFrame.Angles(Rad(10),Rad(0),Rad(0)),i)
+					wait()
+				end
+				for i=0,1,0.1 do
+					Hrj.C0 = Hrj.C0:lerp(Hrjcf * CFrame.Angles(Rad(-10),Rad(0),Rad(0)),i)
+					Neck.C0 = Neck.C0:lerp(Ncf * CFrame.Angles(Rad(-20),Rad(0),Rad(0)),i)
+					LShold.C0 = LShold.C0:lerp(Lscf * CFrame.Angles(Rad(-10),Rad(0),Rad(10)),i)
+					RShold.C0 = RShold.C0:lerp(Rscf * CFrame.Angles(Rad(-10),Rad(0),Rad(-10)),i)
+					LHip.C0 = LHip.C0:lerp(Lhcf * CFrame.Angles(Rad(-5),Rad(0),Rad(10)),i)
+					RHip.C0 = RHip.C0:lerp(Rhcf * CFrame.Angles(Rad(-5),Rad(0),Rad(-10)),i)
+					wait()
+				end
+				local bv = Create("BodyVelocity",HRoot,"BV",{MaxForce = Vector3.new(2e8,2e8,2e8),Velocity = Vector3.new(0,100,0)})
+				wait(2)
+				Torso.Transparency = 1
+				Head.Transparency = 1
+				LArm.Transparency = 1
+				RArm.Transparency = 1
+				LLeg.Transparency = 1
+				RLeg.Transparency = 1
+				Torso.Anchored = true
+				bv:Destroy()
+				local createEffect = true
+				local proj = Create("Part",workspace,"Effect",{CanCollide = false,Transparency = 1,Size = Vector3.new(6,6,6),CFrame = HRoot.CFrame * CFrame.new(0,-6,0) * CFrame.Angles(Rad(-90),Rad(0),Rad(0))})
+				local vel = Create("BodyVelocity",proj,"BV",{MaxForce = Vector3.new(2e8,2e8,2e8),Velocity = proj.CFrame.lookVector * 100})
+				workspace.CurrentCamera.CameraSubject = proj
+				coroutine.resume(coroutine.create(function()
+					repeat
+						local part = Create("Part",Char,"Effect",{Anchored = true,CanCollide = false,Material = "Neon",BrickColor = Colours[Random(1,#Colours)],Size = Vector3.new(6,6,6),CFrame = proj.CFrame * CFrame.Angles(Rad(Random(-360,360)),Rad(Random(-360,360)),Rad(Random(-360,360)))})
+						game:GetService("Debris"):AddItem(part,1)
+						coroutine.resume(coroutine.create(function()
+							local tween = TweenService:Create(part,TweenInfo.new(1),{Size = Vector3.new(12,12,12),Transparency = 1,CFrame = part.CFrame * CFrame.Angles(Rad(Random(-360,360)),Rad(Random(-360,360)),Rad(Random(-360,360)))})
+							tween:Play()
+							wait(1)
+							part:Destroy()
+						end))
+						game:GetService("RunService").RenderStepped:wait()
+					until not createEffect
+				end))
+				proj.Touched:connect(function(h)
+					if h:IsDescendantOf(Char) then return end
+					createEffect = false
+					proj.Anchored = true
+					Torso.CFrame = CFrame.new((proj.CFrame * CFrame.new(0,2,0)).p)
+					Torso.Transparency = 0
+					Head.Transparency = 0
+					LArm.Transparency = 0
+					RArm.Transparency = 0
+					LLeg.Transparency = 0
+					RLeg.Transparency = 0
+					workspace.CurrentCamera.CameraSubject = Human
+					coroutine.resume(coroutine.create(function()
+						for _,v in pairs(workspace:GetChildren()) do
+							if v:IsA('Model') and v ~= Char and v:FindFirstChildOfClass("Humanoid") then
+								local hum = v:FindFirstChildOfClass("Humanoid")
+								local tor = v:FindFirstChild("Torso") or v:FindFirstChild("HumanoidRootPart")
+								if tor then
+									local magni = (tor.Position-HRoot.Position).magnitude
+									if magni <= 20 then
+										v:BreakJoints()
+									elseif magni > 20 and magni <= 50 then
+										for _,b in pairs(v:GetChildren()) do
+											if b:IsA('ForceField') then
+												b:Destroy()
+											end
+										end
+										hum:TakeDamage(100-Floor(magni))
+									end
+								end
+							end
+						end
+					end))
+					coroutine.resume(coroutine.create(function()
+						for i=0,1,0.1 do
+							local part = Create("Part",Char,"Effect",{Anchored = true,CanCollide = false,Material = "Neon",Size = Vector3.new(8,8,8),BrickColor = Colours[Random(1,#Colours)],CFrame = proj.CFrame})
+							local ring = Create("Part",Char,"Effect",{Anchored = true,CanCollide = false,CFrame = proj.CFrame * CFrame.Angles(Rad(Random(-360,360)),Rad(Random(-360,360)),Rad(Random(-360,360))),BrickColor = Colours[Random(1,#Colours)]})
+							local mesh = Create("SpecialMesh",ring,"Mesh",{MeshId = "http://www.roblox.com/asset/?id=3270017",Scale = Vector3.new(16,16,16)})
+							coroutine.resume(coroutine.create(function()
+								--[[for i=0,1,0.1 do
+									mesh.Scale = mesh.Scale:lerp(Vector3.new(24,24,24),i)
+									ring.Transparency = i
+									wait()
+								end]]
+								TweenService:Create(ring,TweenInfo.new(1),{Transparency = 1}):Play()
+								TweenService:Create(mesh,TweenInfo.new(1),{Scale = Vector3.new(24,24,24)}):Play()
+								wait(1)
+								ring:Destroy()
+							end))
+							coroutine.resume(coroutine.create(function()
+								for i=0,1,0.1 do
+									local orig = part.CFrame
+									part.Size = part.Size:lerp(Vector3.new(16,16,16),i)
+									part.CFrame = proj.CFrame * CFrame.Angles(Rad(Random(-360,360)),Rad(Random(-360,360)),Rad(Random(-360,360)))
+									part.Transparency = i
+									wait()
+								end
+								part:Destroy()
+							end))
+							wait()
+						end
+						proj:Destroy()
+						Attacking = false
+						Torso.Anchored = false
+					end))
+				end)
+			elseif key == Enum.KeyCode.F then
+				--Super punch,send them flying
+				FistAura1.Enabled = true
+				Attacking = true
+				local Punching = true
+				local cache = {}
+				LArm.Touched:connect(function(h)
+					if h.Parent == nil then return end
+					if cache[h.Parent.Name] then return end
+					if h:IsDescendantOf(Char) then return end
+					if not Punching then return end
+					if h.Parent.Name:lower():find("veh") and not h.Parent.Name:lower():find("spawn") then
+						local bv = Create("BodyVelocity",h,"BV",{MaxForce = Vector3.new(2e8,2e8,2e8),Velocity = HRoot.CFrame.lookVector * 500})
+						h.Parent:BreakJoints()
+						game:GetService("Debris"):AddItem(bv,0.5)
+						game:GetService("Debris"):AddItem(h.Parent,3)
+						return
+					end
+					if not h.Parent:FindFirstChildOfClass("Humanoid") then return end
+					Punching = false
+					cache[h.Parent.Name] = true
+					local hum = h.Parent:FindFirstChildOfClass("Humanoid")
+					if hum.MaxHealth > 2000 then
+						hum.MaxHealth = 2000
+					end
+					for _,v in pairs(h.Parent:GetChildren()) do
+						if v:IsA('ForceField') then
+							v:Destroy()
+						end
+					end
+					if hum.Health > (hum.MaxHealth/2) then
+						local bv = Create("BodyVelocity",h,"BV",{MaxForce = Vector3.new(2e8,2e8,2e8),Velocity = HRoot.CFrame.lookVector * 100})
+						game:GetService("Debris"):AddItem(bv,1)
+						hum:TakeDamage(hum.MaxHealth/2)
+					else
+						h.Parent:BreakJoints()
+						Torso.Anchored = true
+						for _,v in pairs(h.Parent:GetChildren()) do
+							if v:IsA('BasePart') then
+								v.CanCollide = false
+								local bv = Create("BodyVelocity",v,"BV",{MaxForce = Vector3.new(2e8,2e8,2e8),Velocity = HRoot.CFrame.lookVector * 500})
+								game:GetService("Debris"):AddItem(bv,2)
+							end
+						end
+						Torso.Anchored = false
+					end
+					Attacking = false
+				end)
+				for i=0,1,0.1 do
+					Hrj.C0 = Hrj.C0:lerp(Hrjcf * CFrame.Angles(Rad(0),Rad(0),Rad(90)),i)
+					Neck.C0 = Neck.C0:lerp(Ncf * CFrame.Angles(Rad(0),Rad(0),Rad(270)),i)
+					RShold.C0 = RShold.C0:lerp(Rscf * CFrame.Angles(Rad(0),Rad(20),Rad(40)),i)
+					LShold.C0 = LShold.C0:lerp(Lscf * CFrame.Angles(Rad(0),Rad(20),Rad(-90)),i)
+					wait()
+				end
+				wait(.1)
+				for i=0,1,0.1 do
+					Hrj.C0 = Hrj.C0:lerp(Hrjcf * CFrame.Angles(Rad(0),Rad(0),Rad(270)),i)
+					Neck.C0 = Neck.C0:lerp(Ncf * CFrame.Angles(Rad(0),Rad(0),Rad(90)),i)
+					RShold.C0 = RShold.C0:lerp(Rscf * CFrame.Angles(Rad(0),Rad(-20),Rad(40)),i)
+					LShold.C0 = LShold.C0:lerp(Lscf * CFrame.Angles(Rad(0),Rad(90),Rad(-90)),i)
+					if not Punching then
+						break
+					end
+					wait()
+				end
+				if Punching then
+					Punching = false
+					Attacking = false
+				end
+				FistAura1.Enabled = false
+			end
+		else
+			if key == Enum.KeyCode.Q then
+				Attacking = true
+				local createEffect = true
+				local projFire = false
+				coroutine.resume(coroutine.create(function()
+					repeat
+						local effect = Create("Part",workspace,"Part",{Material = "Neon",BrickColor = Colours[Random(1,#Colours)],Size = Vector3.new(2,2,2),CanCollide = false,Anchored = false,CFrame = HRoot.CFrame * CFrame.new(Random(-10,10),-2,Random(-10,10))})
+						Create("BodyVelocity",effect,"BV",{MaxForce = Vector3.new(0,2e8,0),Velocity = Vector3.new(0,10,0)})
+						coroutine.resume(coroutine.create(function()
+							for i=0,1,0.1 do
+								effect.CFrame = effect.CFrame:lerp(effect.CFrame * CFrame.Angles(Rad(Random(-360,360)),Rad(Random(-360,360)),Rad(Random(-360,360))),i)
+								effect.Transparency = i
+								wait()
+							end
+							effect:Destroy()
+						end))
+						game:GetService("Debris"):AddItem(effect,1)
+						game:GetService("RunService").RenderStepped:wait()
+					until not createEffect
+				end))
+				for i=0,1,0.1 do
+					Hrj.C0 = Hrj.C0:lerp(Hrjcf,i)
+					LShold.C0 = LShold.C0:lerp(Lscf * CFrame.Angles(Rad(0),Rad(-70),Rad(-90)),i)
+					RShold.C0 = RShold.C0:lerp(Rscf * CFrame.Angles(Rad(0),Rad(70),Rad(90)),i)
+					Neck.C0 = Neck.C0:lerp(Ncf * CFrame.Angles(Rad(10),Rad(0),Rad(0)),i)
+					wait()
+				end
+				wait(1)
+				for i=0,1,0.1 do
+					LShold.C0 = LShold.C0:lerp(Lscf * CFrame.Angles(Rad(0),Rad(-50),Rad(-90)),i)
+					RShold.C0 = RShold.C0:lerp(Rscf * CFrame.Angles(Rad(0),Rad(50),Rad(90)),i)
+					Neck.C0 = Neck.C0:lerp(Ncf * CFrame.Angles(Rad(-10),Rad(0),Rad(0)),i)
+					if i>= 0.8 then
+						createEffect = false
+					end
+					wait()
+				end
+				local proj = Create("Part",workspace,"Effect",{CanCollide = false,Anchored = false,Size = Vector3.new(20,40,8),CFrame = HRoot.CFrame,Transparency = 1})
+				Create("BodyVelocity",proj,"BV",{MaxForce = Vector3.new(2e8,2e8,2e8),Velocity = HRoot.CFrame.lookVector * 150})
+				game:GetService("Debris"):AddItem(proj,2)
+				proj.Touched:connect(function(h)
+					if h.Parent == nil then return end
+					if h:IsDescendantOf(Char) then return end
+					if h.Parent.Name:lower():find("veh") then h.Parent:BreakJoints() game:GetService("Debris"):AddItem(h.Parent,3) return end
+					h:BreakJoints()
+				end)
+				projFire = true
+				proj.CFrame = HRoot.CFrame * CFrame.new(0,0,-4)
+				coroutine.resume(coroutine.create(function()
+					repeat
+						coroutine.resume(coroutine.create(function()
+							local part = Create("Part",Char,"Effect",{Anchored = true,CanCollide = false,Material = "Neon",BrickColor = Colours[Random(1,#Colours)],Size = Vector3.new(8,8,8),CFrame = proj.CFrame})
+							part.CFrame = proj.CFrame * CFrame.Angles(Rad(Random(-360,360)),Rad(Random(-360,360)),Rad(Random(-360,360)))
+							game:GetService("Debris"):AddItem(part,0.1)
+							local ring = Create("Part",Char,"Effect",{Anchored = true,CanCollide = false,CFrame = proj.CFrame * CFrame.Angles(Rad(Random(-360,360)),Rad(Random(-360,360)),Rad(Random(-360,360))),BrickColor = Colours[Random(1,#Colours)]})
+							local mesh = Create("SpecialMesh",ring,"Mesh",{MeshId = "http://www.roblox.com/asset/?id=3270017",Scale = Vector3.new(8,8,8)})
+							local tween = TweenService:Create(ring,TweenInfo.new(0.5),{Transparency = 1})
+							local tween2 = TweenService:Create(mesh,TweenInfo.new(0.5),{Scale = Vector3.new(32,32,32)})
+							tween:Play()
+							tween2:Play()
+							wait(0.5)
+							ring:Destroy()
+						end))
+						game:GetService("RunService").RenderStepped:wait()
+					until not projFire
+				end))
+				coroutine.resume(coroutine.create(function()
+					wait(2)
+					projFire = false
+				end))
+				Attacking = false
+			elseif key == Enum.KeyCode.E then
+				Attacking = true
+				for i=0,1,0.1 do
+					Hrj.C0 = Hrj.C0:lerp(Hrjcf * CFrame.Angles(Rad(-20),Rad(0),Rad(0)),i)
+					Neck.C0 = Neck.C0:lerp(Ncf * CFrame.Angles(Rad(-10),Rad(0),Rad(0)),i)
+					LShold.C0 = LShold.C0:lerp(Lscf * CFrame.Angles(Rad(0),Rad(60),Rad(-90)),i)
+					RShold.C0 = RShold.C0:lerp(Rscf * CFrame.Angles(Rad(0),Rad(-60),Rad(90)),i)
+					LHip.C0 = LHip.C0:lerp(Lhcf * CFrame.Angles(Rad(-5),Rad(0),Rad(20)),i)
+					RHip.C0 = RHip.C0:lerp(Rhcf * CFrame.Angles(Rad(-5),Rad(0),Rad(-20)),i)
+					wait()
+				end
+				for i=0,1,0.1 do
+					local part = Create("Part",Char,"Effect",{Anchored = true,CanCollide = false,Transparency = 1,CFrame = HRoot.CFrame * CFrame.new(Random(-50,50),-4,Random(-50,50))})
+					game:GetService("Debris"):AddItem(part,2)
+					coroutine.resume(coroutine.create(function()
+						local createEffect = true
+						local proj = Create("Part",workspace,"Effect",{CanCollide = false,Material = "Neon",Size = Vector3.new(4,4,4),CFrame = HRoot.CFrame * CFrame.new(0,200,0),BrickColor = Colours[Random(1,#Colours)]})
+						local mesh = Create("SpecialMesh",proj,"Mesh",{MeshType = "Sphere",Scale = Vector3.new(1,1,1)})
+						proj.CFrame = CFrame.new(proj.Position,part.Position)
+						Create("BodyVelocity",proj,"BV",{MaxForce = Vector3.new(2e8,2e8,2e8),Velocity = proj.CFrame.lookVector * 100})
+						proj.Touched:connect(function(h)
+							if h:IsDescendantOf(Char) then return end
+							if h.Name == "Effect" then return end
+							createEffect = false
+							proj.Anchored = true
+							coroutine.resume(coroutine.create(function()
+								for _,v in pairs(workspace:GetChildren()) do
+									if v:IsA('Model') and v ~= Char and v:FindFirstChildOfClass("Humanoid") then
+										local hum = v:FindFirstChildOfClass("Humanoid")
+										local tor = v:FindFirstChild("Torso") or v:FindFirstChild("HumanoidRootPart")
+										if tor then
+											local magni = (tor.Position-proj.Position).magnitude
+											if magni <= 20 then
+												v:BreakJoints()
+											elseif magni > 20 and magni <= 50 then
+												for _,b in pairs(v:GetChildren()) do
+													if b:IsA('ForceField') then
+														b:Destroy()
+													end
+												end
+												hum:TakeDamage(100-Floor(magni))
+											end
+										end
+									end
+								end
+							end))
+							local tween = TweenService:Create(mesh,TweenInfo.new(2),{Scale = Vector3.new(12,12,12)})
+							local tween2 = TweenService:Create(proj,TweenInfo.new(2),{Transparency = 1})
+							tween:Play()
+							tween2:Play()
+							wait(2)
+							proj:Destroy()
+						end)
+						coroutine.resume(coroutine.create(function()
+							repeat
+								coroutine.resume(coroutine.create(function()
+									local brick = Create("Part",Char,"Effect",{Material = "Neon",Anchored = true,CanCollide = false,BrickColor = Colours[Random(1,#Colours)],Size = Vector3.new(4,4,4),CFrame = proj.CFrame * CFrame.Angles(Rad(Random(-360,360)),Rad(Random(-360,360)),Rad(Random(-360,360)))})
+									local bmesh = Create("BlockMesh",brick,"Mesh",{})
+									game:GetService("Debris"):AddItem(brick,1)
+									local tween = TweenService:Create(brick,TweenInfo.new(1),{Transparency = 1})
+									local tween2 = TweenService:Create(bmesh,TweenInfo.new(1),{Scale = Vector3.new(3,3,3)})
+									tween:Play()
+									tween2:Play()
+									wait(1)
+									--[[for i=0,1,0.1 do
+										bmesh.Scale = bmesh.Scale:lerp(Vector3.new(3,3,3),i)
+										brick.Transparency = i
+										wait()
+									end]]
+									brick:Destroy()
+								end))
+								game:GetService("RunService").RenderStepped:wait()
+							until not createEffect
+						end))
+					end))
+					wait()
+				end
+				Attacking = false
+			elseif key == Enum.KeyCode.R then
+				Attacking = true
+				for i=0,1,0.1 do
+					Hrj.C0 = Hrj.C0:lerp(Hrjcf * CFrame.Angles(Rad(-10),Rad(0),Rad(0)),i)
+					LHip.C0 = LHip.C0:lerp(Lhcf * CFrame.Angles(Rad(-5),Rad(0),Rad(10)),i)
+					RHip.C0 = RHip.C0:lerp(Rhcf * CFrame.Angles(Rad(-5),Rad(0),Rad(-10)),i)
+					LShold.C0 = LShold.C0:lerp(Lscf * CFrame.Angles(Rad(-5),Rad(0),Rad(-10)),i)
+					RShold.C0 = RShold.C0:lerp(Rscf * CFrame.Angles(Rad(-5),Rad(0),Rad(10)),i)
+					Neck.C0 = Neck.C0:lerp(Ncf * CFrame.Angles(Rad(-10),Rad(0),Rad(0)),i)
+					wait()
+				end
+				for i=0,1,0.1 do
+					Hrj.C0 = Hrj.C0:lerp(Hrjcf * CFrame.Angles(Rad(10),Rad(0),Rad(0)),i)
+					LHip.C0 = LHip.C0:lerp(Lhcf * CFrame.Angles(Rad(-5),Rad(0),Rad(-10)),i)
+					RHip.C0 = RHip.C0:lerp(Rhcf * CFrame.Angles(Rad(-5),Rad(0),Rad(10)),i)
+					LShold.C0 = LShold.C0:lerp(Lscf * CFrame.Angles(Rad(-5),Rad(0),Rad(10)),i)
+					RShold.C0 = RShold.C0:lerp(Rscf * CFrame.Angles(Rad(-5),Rad(0),Rad(-10)),i)
+					Neck.C0 = Neck.C0:lerp(Ncf * CFrame.Angles(Rad(-10),Rad(0),Rad(0)),i)
+					if i > 0.8 and i <= 0.9 then
+						local proj = Create("Part",workspace,"Effect",{CanCollide = false,Anchored = false,Size = Vector3.new(20,40,8),CFrame = HRoot.CFrame,Transparency = 1})
+						Create("BodyVelocity",proj,"BV",{MaxForce = Vector3.new(2e8,2e8,2e8),Velocity = HRoot.CFrame.lookVector * 150})
+						game:GetService("Debris"):AddItem(proj,2)
+						proj.Touched:connect(function(h)
+							local cf = proj.CFrame
+							if h:IsDescendantOf(Char) then return end
+							if h.Parent == nil then return end
+							if h.Parent.Name:lower():find("veh") then
+								h.Parent:BreakJoints()
+								game:GetService("Debris"):AddItem(h.Parent,3)
+								return
+							end
+							if h:IsDescendantOf(Char) then return end
+							if h:IsA('BasePart') then
+								if h.Parent:FindFirstChildOfClass("Humanoid") then
+									h.Velocity = proj.CFrame.lookVector * 100
+								end
+								h:BreakJoints()
+							end
+							proj.CFrame = cf
+						end)
+						proj.CFrame = HRoot.CFrame * CFrame.new(0,0,-4)
+						coroutine.resume(coroutine.create(function()
+							repeat
+								coroutine.resume(coroutine.create(function()
+									local ring = Create("Part",Char,"Effect",{Anchored = true,CanCollide = false,CFrame = proj.CFrame,BrickColor = Colours[Random(1,#Colours)]})--proj.CFrame * CFrame.Angles(Rad(Random(-360,360)),Rad(Random(-360,360)),Rad(Random(-360,360)))
+									local mesh = Create("SpecialMesh",ring,"Mesh",{MeshId = "http://www.roblox.com/asset/?id=3270017",Scale = Vector3.new(8,8,8)})
+									local tween = TweenService:Create(ring,TweenInfo.new(0.5),{Transparency = 1})
+									local tween2 = TweenService:Create(mesh,TweenInfo.new(0.5),{Scale = Vector3.new(32,32,32)})
+									tween:Play()
+									tween2:Play()
+									wait(0.5)
+									ring:Destroy()
+								end))
+								game:GetService("RunService").RenderStepped:wait()
+							until proj.Parent == nil
+						end))
+					end
+					wait()
+				end
+				Attacking = false
+			elseif key == Enum.KeyCode.T then
+				Attacking = true
+				for i=0,1,0.1 do
+					Hrj.C0 = Hrj.C0:lerp(Hrjcf * CFrame.Angles(Rad(90),Rad(0),Rad(0)),i)
+					LHip.C0 = LHip.C0:lerp(Lhcf * CFrame.Angles(Rad(0),Rad(0),Rad(-120)),i)
+					RHip.C0 = RHip.C0:lerp(Rhcf * CFrame.Angles(Rad(0),Rad(0),Rad(120)),i)
+					LShold.C0 = LShold.C0:lerp(Lscf * CFrame.Angles(Rad(0),Rad(0),Rad(-70)),i)
+					RShold.C0 = RShold.C0:lerp(Rscf * CFrame.Angles(Rad(0),Rad(0),Rad(70)),i)
+					Neck.C0 = Neck.C0:lerp(Ncf * CFrame.Angles(Rad(90),Rad(0),Rad(0)),i)
+					Torso.Transparency = i
+					LArm.Transparency = i
+					RArm.Transparency = i
+					LLeg.Transparency = i
+					RLeg.Transparency = i
+					Head.Transparency = i
+					FistAura1.Enabled = false
+					FistAura2.Enabled = false
+					Tl.Visible = false
+					Head.face.Transparency = i
+					wait()
+				end
+				local createEffect = true
+				spawn(function()
+					local hitbox = Create("Part",Char,"Effect",{CanCollide = false,Size = Vector3.new(8,8,8),Transparency = 1,CFrame = HRoot.CFrame})
+					local hitWeld = newWeld(HRoot,hitbox,HRoot)
+					BodyVel.Parent = HRoot
+					BodyPosition.Parent = nil
+					BodyVel.Velocity = Vector3.new(0,50,0)
+					wait(1)
+					hitbox.Touched:connect(function(h)
+						if h:IsDescendantOf(Char) then return end
+						if h.Name == "Effect" then return end
+						if not createEffect then return end
+						hitbox.Anchored = true
+						hitWeld:Destroy()
+						createEffect = false
+						BodyVel.Velocity = Vector3.new(0,0,0)
+						coroutine.resume(coroutine.create(function()
+						for _,v in pairs(workspace:GetChildren()) do
+							if v:IsA('Model') and v ~= Char and v:FindFirstChildOfClass("Humanoid") then
+								local hum = v:FindFirstChildOfClass("Humanoid")
+								local tor = v:FindFirstChild("Torso") or v:FindFirstChild("HumanoidRootPart")
+								if tor then
+									local magni = (tor.Position-HRoot.Position).magnitude
+									if magni <= 20 then
+										v:BreakJoints()
+									elseif magni > 20 and magni <= 50 then
+										for _,b in pairs(v:GetChildren()) do
+											if b:IsA('ForceField') then
+												b:Destroy()
+											end
+										end
+										hum:TakeDamage(100-Floor(magni))
+									end
+								end
+							end
+						end
+					end))
+					coroutine.resume(coroutine.create(function()
+						for i=0,2,0.1 do
+							local part = Create("Part",Char,"Effect",{Anchored = true,CanCollide = false,Material = "Neon",Size = Vector3.new(8,8,8),BrickColor = Colours[Random(1,#Colours)],CFrame = hitbox.CFrame})
+							local bmesh = Create("BlockMesh",part,"Mesh",{})
+							local ring = Create("Part",Char,"Effect",{Anchored = true,CanCollide = false,CFrame = hitbox.CFrame * CFrame.Angles(Rad(Random(-360,360)),Rad(Random(-360,360)),Rad(Random(-360,360))),BrickColor = Colours[Random(1,#Colours)]})
+							local mesh = Create("SpecialMesh",ring,"Mesh",{MeshId = "http://www.roblox.com/asset/?id=3270017",Scale = Vector3.new(16,16,16)})
+							TweenService:Create(ring,TweenInfo.new(1),{Transparency = 1}):Play()
+							TweenService:Create(mesh,TweenInfo.new(1),{Scale = Vector3.new(50,50,50)}):Play()
+							game:GetService("Debris"):AddItem(ring,0.9)
+							TweenService:Create(part,TweenInfo.new(1),{Transparency = 1}):Play()
+							TweenService:Create(bmesh,TweenInfo.new(1),{Scale = Vector3.new(6,6,6)}):Play()
+							game:GetService("Debris"):AddItem(part,0.9)
+							coroutine.resume(coroutine.create(function()
+								for i=0,1,0.01 do
+									part.CFrame = hitbox.CFrame * CFrame.Angles(Rad(Random(-360,360)),Rad(Random(-360,360)),Rad(Random(-360,360)))
+									ring.CFrame = hitbox.CFrame * CFrame.Angles(Rad(Random(-360,360)),Rad(Random(-360,360)),Rad(Random(-360,360)))
+									wait()
+								end
+							end))
+							wait()
+						end
+						hitbox:Destroy()
+					end))
+						for i=1,0,-0.1 do
+							Torso.Transparency = i
+							LArm.Transparency = i
+							RArm.Transparency = i
+							LLeg.Transparency = i
+							RLeg.Transparency = i
+							Head.Transparency = i
+							FistAura1.Enabled = true
+							FistAura2.Enabled = true
+							Tl.Visible = true
+							Head.face.Transparency = i
+							wait()
+						end
+						BodyPosition.Parent = HRoot
+						BodyVel.Parent = nil
+						Attacking = false
+					end)
+					repeat
+						spawn(function()
+							local effect = Create("Part",Char,"Effect",{Anchored = true,Material = "Neon",CanCollide = false,BrickColor = Colours[Random(1,#Colours)],Size = Vector3.new(8,8,8),CFrame = HRoot.CFrame * CFrame.Angles(Rad(Random(-360,360)),Rad(Random(-360,360)),Rad(Random(-360,360)))})
+							local mesh = Create("BlockMesh",effect,"Mesh",{})
+							game:GetService("Debris"):AddItem(effect,1)
+							TweenService:Create(mesh,TweenInfo.new(1),{Scale = Vector3.new(2,2,2)}):Play()
+							TweenService:Create(effect,TweenInfo.new(1),{Transparency = 1}):Play()
+							effect.CFrame = HRoot.CFrame * CFrame.Angles(Rad(Random(-360,360)),Rad(Random(-360,360)),Rad(Random(-360,360)))
+						end)
+						BodyVel.Velocity = workspace.CurrentCamera.CFrame.lookVector * 100
+						game:GetService("RunService").RenderStepped:wait()
+					until not createEffect
+				end)
+			end
+		end
+		if key == Enum.KeyCode.L then
+			Walkspeed = 0
+			Attacking = true
+			if Mode == "Normal" then
+				Mode = "Power"
+				Colours= {BrickColor.new("Black"),BrickColor.new("Crimson")}
+				local Switching = true
+				coroutine.resume(coroutine.create(function()
+					repeat
+						local ball = Create("Part",workspace,"Ball",{Shape = "Ball",Size = Vector3.new(4,4,4),Anchored = true,CanCollide = false,CFrame = HRoot.CFrame,Material = "Neon",BrickColor = Colours[Random(1,#Colours)]})
+						game:GetService("Debris"):AddItem(ball,1)
+						coroutine.resume(coroutine.create(function()
+							for i=0,1,0.1 do
+								ball.Size = ball.Size:lerp(Vector3.new(10,10,10),0.5)
+								ball.CFrame = HRoot.CFrame
+								ball.Transparency = i
+								wait()
+							end
+							ball:Destroy()
+						end))
+						wait()
+					until not Switching
+				end))
+				local ball = Create("Part",Char,"Ball",{Transparency=1,Shape = "Ball",Size = Vector3.new(4,4,4),Anchored = true,CanCollide = false,CFrame = HRoot.CFrame,Material = "Neon",BrickColor = BrickColor.new("Black")})
+				for i=0,1,0.1 do
+					Hrj.C0 = Hrj.C0:lerp(Hrjcf * CFrame.Angles(Rad(-10),Rad(0),Rad(0)),i)
+					LHip.C0 = LHip.C0:lerp(Lhcf * CFrame.Angles(Rad(-5),Rad(0),Rad(10)),i)
+					RHip.C0 = RHip.C0:lerp(Rhcf * CFrame.Angles(Rad(-5),Rad(0),Rad(-10)),i)
+					Neck.C0 = Neck.C0:lerp(Ncf * CFrame.Angles(Rad(-10),Rad(0),Rad(0)),i)
+					LShold.C0 = LShold.C0:lerp(Lscf * CFrame.Angles(Rad(-40),Rad(0),Rad(40)),i)
+					RShold.C0 = RShold.C0:lerp(Rscf * CFrame.Angles(Rad(-40),Rad(0),Rad(-40)),i)
+					wait()
+				end
+				Switching = false
+				ball.Transparency = 0
+				for i=0,1,0.1 do
+					ball.Size = ball.Size:lerp(Vector3.new(14,14,14),i)
+					ball.CFrame = HRoot.CFrame
+					ball.Transparency = i
+					wait()
+				end
+				ball:Destroy()
+				FistAura1.Enabled = true
+				FistAura2.Enabled = true
+				BodyPosition.Position = HRoot.Position + Vector3.new(0,2,0)
+				BodyPosition.Parent = HRoot
+				Walkspeed = 32
+			else
+				Mode = "Normal"
+				Colours= {BrickColor.new("Black"),BrickColor.new("Royal purple")}
+				local Switching = true
+				coroutine.resume(coroutine.create(function()
+					repeat
+						local ball = Create("Part",workspace,"Ball",{Shape = "Ball",Size = Vector3.new(4,4,4),Anchored = true,CanCollide = false,CFrame = HRoot.CFrame,Material = "Neon",BrickColor = Colours[Random(1,#Colours)]})
+						game:GetService("Debris"):AddItem(ball,1)
+						coroutine.resume(coroutine.create(function()
+							for i=0,1,0.1 do
+								ball.Size = ball.Size:lerp(Vector3.new(10,10,10),0.5)
+								ball.CFrame = HRoot.CFrame
+								ball.Transparency = i
+								wait()
+							end
+							ball:Destroy()
+						end))
+						wait()
+					until not Switching
+				end))
+				local ball = Create("Part",Char,"Ball",{Transparency=1,Shape = "Ball",Size = Vector3.new(4,4,4),Anchored = true,CanCollide = false,CFrame = HRoot.CFrame,Material = "Neon",BrickColor = BrickColor.new("Black")})
+				for i=0,1,0.1 do
+					Hrj.C0 = Hrj.C0:lerp(Hrjcf * CFrame.Angles(Rad(-10),Rad(0),Rad(0)),i)
+					LHip.C0 = LHip.C0:lerp(Lhcf * CFrame.Angles(Rad(-5),Rad(0),Rad(10)),i)
+					RHip.C0 = RHip.C0:lerp(Rhcf * CFrame.Angles(Rad(-5),Rad(0),Rad(-10)),i)
+					Neck.C0 = Neck.C0:lerp(Ncf * CFrame.Angles(Rad(-10),Rad(0),Rad(0)),i)
+					LShold.C0 = LShold.C0:lerp(Lscf * CFrame.Angles(Rad(-40),Rad(0),Rad(40)),i)
+					RShold.C0 = RShold.C0:lerp(Rscf * CFrame.Angles(Rad(-40),Rad(0),Rad(-40)),i)
+					wait()
+				end
+				Switching = false
+				ball.Transparency = 0
+				for i=0,1,0.1 do
+					local cf = ball.CFrame
+					ball.Size = ball.Size:lerp(Vector3.new(14,14,14),i)
+					ball.CFrame = cf
+					ball.Transparency = i
+					wait()
+				end
+				ball:Destroy()
+				FistAura1.Enabled = false
+				FistAura2.Enabled = false
+				BodyPosition.Parent = nil
+				Walkspeed = 16
+			end
+			Attacking = false
+		elseif key == Enum.KeyCode.K then
+			Attacking = true
+			for i=0,1,0.1 do
+				Torso.Transparency = i
+				LArm.Transparency = i
+				RArm.Transparency = i
+				LLeg.Transparency = i
+				RLeg.Transparency = i
+				Head.Transparency = i
+				wait()
+			end
+			Char:MoveTo(Mouse.Hit.p + Vector3.new(0,2,0))
+			--Torso.CFrame = CFrame.new(Mouse.Hit.p)
+			for i=1,0,-0.1 do
+				Torso.Transparency = i
+				LArm.Transparency = i
+				RArm.Transparency = i
+				LLeg.Transparency = i
+				RLeg.Transparency = i
+				Head.Transparency = i
+				wait()
+			end
+			Attacking = false
+		end
+	end
+end
+function keyUp(key)
+	
+end
+UserInputService.TextBoxFocused:connect(function()
+	Typing = true
+end)
+UserInputService.TextBoxFocusReleased:connect(function()
+	Typing = false
+end)
+if UserInputService.KeyboardEnabled and UserInputService.MouseEnabled then
+	UserInputService.InputBegan:connect(function(inpType)
+		if inpType.KeyCode ~= Enum.KeyCode.Unknown then
+			if not Typing then
+				keyDown(inpType.KeyCode)
+			end
+		end
+	end)
+	UserInputService.InputEnded:connect(function(inpType)
+		if inpType ~= Enum.KeyCode.Unknown then
+			if not Typing then
+				keyUp(inpType.KeyCode)
+			end
+		end
+	end)
+end
+game:GetService("RunService").RenderStepped:connect(function(step)
+	Human.WalkSpeed = Walkspeed
+	Human.MaxHealth = math.huge
+	Human.Health = Human.MaxHealth
+	if not Attacking then
+		if (Torso.Velocity).magnitude < 2 then
+			Anim = "Idle"
+		elseif (Torso.Velocity).magnitude < 20 then
+			Anim = "Walk"
+		elseif (Torso.Velocity).magnitude > 20 then
+			Anim = "Run"
+		end
+		if Anim == "Idle" then
+			if Mode == "Normal" then
+				Hrj.C0 = Hrj.C0:lerp(Hrjcf * CFrame.Angles(Rad(2 * Sin(tick()/1.5)),Rad(0),Rad(0)),0.2)
+				LHip.C0 = LHip.C0:lerp(Lhcf * CFrame.Angles(Rad(-5),Rad(0),-Rad(2 * Sin(tick()/1.5))),0.2)
+				RHip.C0 = RHip.C0:lerp(Rhcf * CFrame.Angles(Rad(-5),Rad(0),Rad(2 * Sin(tick()/1.5))),0.2)
+				LShold.C0 = LShold.C0:lerp(Lscf * CFrame.Angles(Rad(-5),Rad(0),Rad(0)) * CFrame.Angles(Rad(2 * Sin(tick()/1.5)),Rad(0),Rad(0)),0.2)
+				RShold.C0 = RShold.C0:lerp(Rscf * CFrame.Angles(Rad(-5),Rad(0),Rad(0)) * CFrame.Angles(Rad(2 * Sin(tick()/1.5)),Rad(0),Rad(0)),0.2)
+				Neck.C0 = Neck.C0:lerp(Ncf * CFrame.Angles(Rad(2 * Sin(tick()/1.5)),Rad(5),Rad(0)),0.2)
+			else
+				Hrj.C0 = Hrj.C0:lerp(Hrjcf,0.2)
+				LShold.C0 = LShold.C0:lerp(Lscf * CFrame.Angles(Rad(2 * Sin(tick()/1.5)),Rad(0),Rad(0)),0.2)
+				RShold.C0 = RShold.C0:lerp(Rscf * CFrame.Angles(Rad(2 * Sin(tick()/1.5)),Rad(0),Rad(0)),0.2)
+				Neck.C0 = Neck.C0:lerp(Ncf * CFrame.Angles(Rad(2 * Sin(tick()/1.5)),Rad(0),Rad(0)),0.2)
+				LHip.C0 = LHip.C0:lerp(Lhcf * CFrame.Angles(Rad(-8),Rad(0),Rad(0)),0.2)
+				RHip.C0 = RHip.C0:lerp(Rhcf * CFrame.Angles(Rad(-8),Rad(0),Rad(0)),0.2)
+			end
+		elseif Anim == "Walk" then
+			if Mode == "Normal" then
+				Hrj.C0 = Hrj.C0:lerp(Hrjcf * CFrame.Angles(Rad(0),Rad(0),Rad(10 * Sin(tick()*4))),0.5)
+				LHip.C0 = LHip.C0:lerp(Lhcf * CFrame.Angles(Rad(0),Rad(0),Rad(10 * Sin(tick()*4))),0.5)
+				RHip.C0 = RHip.C0:lerp(Rhcf * CFrame.Angles(Rad(0),Rad(0),Rad(10 * Sin(tick()*4))),0.5)
+				LShold.C0 = LShold.C0:lerp(Lscf * CFrame.Angles(Rad(-5),Rad(0),Rad(10 * Sin(tick()*4))),0.5)
+				RShold.C0 = RShold.C0:lerp(Rscf * CFrame.Angles(Rad(-5),Rad(0),Rad(10 * Sin(tick()*4))),0.5)
+				Neck.C0 = Neck.C0:lerp(Ncf * CFrame.Angles(Rad(0),Rad(10 * Sin(tick()*4)),Rad(0)),0.5)
+			end
+		elseif Anim == "Run" then
+			if Mode == "Power" then
+				Hrj.C0 = Hrj.C0:lerp(Hrjcf * CFrame.Angles(Rad(20),Rad(0),Rad(0)),0.5)
+				LShold.C0 = LShold.C0:lerp(Lscf * CFrame.Angles(Rad(-10),Rad(0),Rad(20)),0.5)
+				RShold.C0 = RShold.C0:lerp(Rscf * CFrame.Angles(Rad(-10),Rad(0),Rad(-20)),0.5)
+				LHip.C0 = LHip.C0:lerp(Lhcf * CFrame.Angles(Rad(0),Rad(0),Rad(10)),0.5)
+				RHip.C0 = RHip.C0:lerp(Rhcf * CFrame.Angles(Rad(0),Rad(0),Rad(-10)),0.5)
+				Neck.C0 = Neck.C0:lerp(Ncf * CFrame.Angles(Rad(-20),Rad(0),Rad(0)),0.5)
+			end
+		end
+	end
+end)
+spawn(function()
+	while game:GetService("RunService").RenderStepped:wait() do
+		if Mode == "Power" and Torso.Transparency ~= 1 then
+			local effect1 = Create("Part",Char,"Effect",{Size = Vector3.new(LLeg.Size.Z,LLeg.Size.Y/2,LLeg.Size.Z),Anchored = true,CanCollide = false,Material = "Neon",Transparency = 0.3,BrickColor = Colours[Random(1,#Colours)],CFrame = LLeg.CFrame * CFrame.new(0,-LLeg.Size.Y/2,0)})
+			local effect2 = Create("Part",Char,"Effect",{Size = Vector3.new(RLeg.Size.Z,RLeg.Size.Y/2,RLeg.Size.Z),Anchored = true,CanCollide = false,Material = "Neon",Transparency = 0.3,BrickColor = Colours[Random(1,#Colours)],CFrame = RLeg.CFrame * CFrame.new(0,-RLeg.Size.Y/2,0)})
+			effect1.CFrame = effect1.CFrame * CFrame.Angles(Rad(Random(-360,360)),Rad(Random(-360,360)),Rad(Random(-360,360)))
+			effect2.CFrame = effect2.CFrame * CFrame.Angles(Rad(Random(-360,360)),Rad(Random(-360,360)),Rad(Random(-360,360)))
+			game:GetService("Debris"):AddItem(effect1,0.05)
+			game:GetService("Debris"):AddItem(effect2,0.05)
+		end
+	end
+end)

@@ -1,0 +1,577 @@
+
+--made by dion stupid bamzookis
+warn("made by dion stupid bamzookis jk luv u all <3")
+function sandbox(var,func)
+	local env = getfenv(func)
+	local newenv = setmetatable({},{
+		__index = function(self,k)
+			if k=="script" then
+				return var
+			else
+				return env[k]
+			end
+		end,
+	})
+	setfenv(func,newenv)
+	return func
+end
+cors = {}
+mas = Instance.new("Model",game:GetService("Lighting"))
+Model0 = Instance.new("Model")
+Part1 = Instance.new("Part")
+Decal2 = Instance.new("Decal")
+Decal3 = Instance.new("Decal")
+Decal4 = Instance.new("Decal")
+Decal5 = Instance.new("Decal")
+Part6 = Instance.new("Part")
+Decal7 = Instance.new("Decal")
+Part8 = Instance.new("Part")
+Script9 = Instance.new("Script")
+Sound10 = Instance.new("Sound")
+Sound11 = Instance.new("Sound")
+Sound12 = Instance.new("Sound")
+Sound13 = Instance.new("Sound")
+Sound14 = Instance.new("Sound")
+Sound15 = Instance.new("Sound")
+Sound16 = Instance.new("Sound")
+Sound17 = Instance.new("Sound")
+Sound18 = Instance.new("Sound")
+Sound19 = Instance.new("Sound")
+Sound20 = Instance.new("Sound")
+Sound21 = Instance.new("Sound")
+Model0.Name = "leppie"
+Model0.Parent = mas
+Model0.PrimaryPart = Part6
+Part1.Name = "Screen"
+Part1.Parent = Model0
+Part1.BrickColor = BrickColor.new("Maroon")
+Part1.Rotation = Vector3.new(-180, 0, -180)
+Part1.Anchored = true
+Part1.Size = Vector3.new(75.8799591, 55.930027, 1.35998762)
+Part1.CFrame = CFrame.new(13.20014, -31.7921829, -39.5804062, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Part1.BottomSurface = Enum.SurfaceType.Smooth
+Part1.TopSurface = Enum.SurfaceType.Smooth
+Part1.Color = Color3.new(0.458824, 0, 0)
+Part1.Position = Vector3.new(13.20014, -31.7921829, -39.5804062)
+Part1.Orientation = Vector3.new(0, 180, 0)
+Part1.Color = Color3.new(0.458824, 0, 0)
+Decal2.Name = "face"
+Decal2.Parent = Part1
+Decal2.Texture = "rbxassetid://90662479"
+Decal3.Name = "eyes"
+Decal3.Parent = Part1
+Decal3.Texture = "rbxassetid://90662469"
+Decal4.Name = "mouth"
+Decal4.Parent = Part1
+Decal5.Name = "breek"
+Decal5.Parent = Part1
+Decal5.Transparency = 1
+Decal5.Texture = "rbxassetid://1186442668"
+Part6.Name = "Keyboard"
+Part6.Parent = Model0
+Part6.BrickColor = BrickColor.new("Really black")
+Part6.Rotation = Vector3.new(-180, 0, -180)
+Part6.Anchored = true
+Part6.Size = Vector3.new(79.1299744, 1, 69.2299881)
+Part6.CFrame = CFrame.new(13.20014, -62.288559, -4.82504272, -1, 0, 0, 0, 1, 0, 0, 0, -1)
+Part6.BottomSurface = Enum.SurfaceType.Smooth
+Part6.TopSurface = Enum.SurfaceType.Smooth
+Part6.Color = Color3.new(0.0666667, 0.0666667, 0.0666667)
+Part6.Position = Vector3.new(13.20014, -62.288559, -4.82504272)
+Part6.Orientation = Vector3.new(0, 180, 0)
+Part6.Color = Color3.new(0.0666667, 0.0666667, 0.0666667)
+Decal7.Parent = Part6
+Decal7.Texture = "http://www.roblox.com/asset/?id=244679164"
+Decal7.Face = Enum.NormalId.Top
+Part8.Name = "Toppart"
+Part8.Parent = Model0
+Part8.BrickColor = BrickColor.new("Really black")
+Part8.Rotation = Vector3.new(-180, 0, 0)
+Part8.Anchored = true
+Part8.Size = Vector3.new(79.1299744, 60.3200264, 1.35998762)
+Part8.CFrame = CFrame.new(13.20014, -31.7921829, -39.7079086, 1, 0, 0, 0, -1, 0, 0, 0, -1)
+Part8.BottomSurface = Enum.SurfaceType.Smooth
+Part8.TopSurface = Enum.SurfaceType.Smooth
+Part8.Color = Color3.new(0.0666667, 0.0666667, 0.0666667)
+Part8.Position = Vector3.new(13.20014, -31.7921829, -39.7079086)
+Part8.Orientation = Vector3.new(0, 180, 180)
+Part8.Color = Color3.new(0.0666667, 0.0666667, 0.0666667)
+Script9.Parent = Model0
+table.insert(cors,sandbox(Script9,function()
+leppie = script.Parent
+keyboard = script.Parent.Keyboard
+screen = script.Parent.Screen
+top = script.Parent.Toppart
+eyes = leppie.Screen.eyes
+face = leppie.Screen.face
+mouth = leppie.Screen.mouth
+
+local puddle = Instance.new("Part", workspace)
+puddle.Transparency = 1
+puddle.Anchored = true
+puddle.CanCollide = false
+puddle.Locked = true
+puddle.Position = Vector3.new(13.2, 0.386, -4.825)
+puddle.BrickColor = BrickColor.new("Really red")
+puddle.Shape = "Cylinder"
+puddle.Size = Vector3.new(0.6, 129.53, 132.12)
+puddle.Orientation = Vector3.new(0,0,90)
+puddle.Material = "Neon"
+
+wait(1)
+script.Parent.Screen.face.Transparency = 0
+script.Parent.portal:Play()
+puddle.Transparency = 0.9
+wait()
+puddle.Transparency = 0.8
+wait()
+puddle.Transparency = 0.7
+wait()
+puddle.Transparency = 0.6
+wait()
+puddle.Transparency = 0.5
+wait()
+puddle.Transparency = 0.4
+wait()
+puddle.Transparency = 0.3
+wait()
+puddle.Transparency = 0.2
+wait()
+puddle.Transparency = 0.1
+wait()
+puddle.Transparency = 0
+wait(3)
+script.Parent.quake:Play()
+wait(1)
+script.Parent.intro:Play()
+
+for i = 1,500 do
+	leppie:SetPrimaryPartCFrame(leppie:GetPrimaryPartCFrame() * CFrame.new(0,0.125,0))
+	wait()
+end
+script.Parent.quake:Stop()
+wait(3)
+script.Parent.intro:Stop()
+wait()
+puddle.Transparency = 0
+wait()
+puddle.Transparency = 0.1
+wait()
+puddle.Transparency = 0.2
+wait()
+puddle.Transparency = 0.3
+wait()
+puddle.Transparency = 0.4
+wait()
+puddle.Transparency = 0.5
+wait()
+puddle.Transparency = 0.6
+wait()
+puddle.Transparency = 0.7
+wait()
+puddle.Transparency = 0.8
+wait()
+puddle.Transparency = 0.9
+wait()
+puddle.Transparency = 1
+wait()
+puddle:Destroy()
+wait(1)
+leppie.Screen.face.Transparency = 1
+leppie.Screen.eyes.Transparency = 0
+leppie.Screen.mouth.Transparency = 0
+leppie.taunt:Play()
+wait()
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432367"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait(0.3)
+mouth.Texture = "http://www.roblox.com/asset/?id=920435550"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920434668"
+wait()
+mouth.Texture = "http://www.roblox.com/asset/?id=920434523"
+wait(0.2)
+mouth.Texture = "http://www.roblox.com/asset/?id=920434815"
+wait(0.2)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920435550"
+wait(0.2)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait(0.2)
+mouth.Texture = "http://www.roblox.com/asset/?id=920434524"
+wait()
+mouth.Texture = "http://www.roblox.com/asset/?id=920432367"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920434668"
+wait(0.2)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432367"
+wait()
+mouth.Texture = "http://www.roblox.com/asset/?id=920434949"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait()
+mouth.Texture = "http://www.roblox.com/asset/?id=920435550"
+wait(0.2)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait()
+mouth.Texture = "http://www.roblox.com/asset/?id=920432367"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait(1)
+mouth.Transparency = 1
+eyes.Transparency = 1
+face.Texture = "http://www.roblox.com/asset/?id=90662479"
+face.Transparency = 0
+wait(2)
+eyes.Texture = "http://www.roblox.com/asset/?id=1136339833"
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+face.Transparency = 1
+eyes.Transparency = 0
+mouth.Transparency = 0
+script.Parent.laugh:Play()
+wait()
+mouth.Texture = "http://www.roblox.com/asset/?id=920432367"
+wait(0.8)
+mouth.Texture = "http://www.roblox.com/asset/?id=920434523"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432367"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920434523"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432367"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920434523"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432367"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920434523"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432367"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920434523"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432367"
+wait(0.1)
+leppie.laugh:Stop()
+mouth.Transparency = 1
+eyes.Transparency = 1
+face.Transparency = 0
+leppie.static:Play()
+face.Texture = "http://www.roblox.com/asset/?id=1437986267"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=161123846"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=1437986267"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=161123846"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=1437986267"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=161123846"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=1437986267"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=161123846"
+wait(0.1)
+leppie.static:Stop()
+wait()
+leppie.milkncereal:Play()
+face.Texture = "http://www.roblox.com/asset/?id=1452644310"
+wait(0.5)
+face.Texture = "http://www.roblox.com/asset/?id=1454229375"
+wait(0.5)
+face.Texture = "http://www.roblox.com/asset/?id=1452644930"
+wait(0.75)
+face.Texture = "http://www.roblox.com/asset/?id=1452644310"
+wait(0.4)
+face.Texture = "http://www.roblox.com/asset/?id=1454229375"
+wait(0.4)
+face.Texture = "http://www.roblox.com/asset/?id=1452644930"
+wait(0.60)
+face.Texture = "http://www.roblox.com/asset/?id=1452644310"
+wait(0.4)
+face.Texture = "http://www.roblox.com/asset/?id=1454229375"
+wait(0.4)
+face.Texture = "http://www.roblox.com/asset/?id=1452644930"
+wait(0.60)
+face.Texture = "http://www.roblox.com/asset/?id=1452644930"
+wait(0.2)
+face.Texture = "http://www.roblox.com/asset/?id=1454229375"
+wait(0.2)
+face.Texture = "http://www.roblox.com/asset/?id=1452644310"
+wait(0.2)
+leppie.milkncereal:Stop()
+leppie.static:Play()
+face.Texture = "http://www.roblox.com/asset/?id=1437986267"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=161123846"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=1437986267"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=161123846"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=1437986267"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=161123846"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=1437986267"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=161123846"
+wait(0.1)
+leppie.static:Stop()
+leppie.reee:Play()
+face.Texture = "http://www.roblox.com/asset/?id=1342394240"
+wait(1)
+face.Texture = "http://www.roblox.com/asset/?id=48129430"
+wait(3)
+leppie.static:Play()
+face.Texture = "http://www.roblox.com/asset/?id=1437986267"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=161123846"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=1437986267"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=161123846"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=1437986267"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=161123846"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=1437986267"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=161123846"
+wait(0.1)
+leppie.static:Stop()
+wait()
+face.Texture = "http://www.roblox.com/asset/?id=873240105"
+wait(0.3)
+leppie.static:Play()
+face.Texture = "http://www.roblox.com/asset/?id=1437986267"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=161123846"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=1437986267"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=161123846"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=1437986267"
+leppie.static:Stop()
+wait(0.05)
+leppie.static:Play()
+face.Texture = "http://www.roblox.com/asset/?id=1437986267"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=161123846"
+wait(0.1)
+face.Texture = "http://www.roblox.com/asset/?id=1437986267"
+leppie.static:Stop()
+face.Transparency = 1
+eyes.Texture = "http://www.roblox.com/asset/?id=238113668"
+eyes.Transparency = 0
+mouth.Texture = "http://www.roblox.com/asset/?id=377495903"
+mouth.Transparency = 0
+leppie.tooterals:Play()
+wait(3.2)
+eyes.Texture = "http://www.roblox.com/asset/?id=1136341716"
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920435550"
+wait(0.2)
+mouth.Texture = "http://www.roblox.com/asset/?id=591848611"
+eyes.Transparency = 1
+wait(2)
+eyes.Transparency = 0
+eyes.Texture = "http://www.roblox.com/asset/?id=1136341716"
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920435550"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920434949"
+wait(2)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920435550"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920434949"
+wait(2.5)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432367"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait(0.05)
+mouth.Texture = "http://www.roblox.com/asset/?id=920434949"
+wait(0.05)
+mouth.Texture = "http://www.roblox.com/asset/?id=920434815"
+wait(0.05)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432367"
+wait(0.05)
+mouth.Texture = "http://www.roblox.com/asset/?id=920434949"
+wait(0.05)
+mouth.Texture = "http://www.roblox.com/asset/?id=920434523"
+wait(0.1)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait(0.05)
+mouth.Texture = "http://www.roblox.com/asset/?id=920435550"
+wait(0.3)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait(0.05)
+mouth.Texture = "http://www.roblox.com/asset/?id=920435550"
+wait(0.04)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait(0.04)
+mouth.Texture = "http://www.roblox.com/asset/?id=920434523"
+wait(0.04)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait(0.2)
+mouth.Texture = "http://www.roblox.com/asset/?id=920434523"
+wait(0.04)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait(0.3)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait(0.05)
+mouth.Texture = "http://www.roblox.com/asset/?id=920435550"
+wait(0.03)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait(0.03)
+mouth.Texture = "http://www.roblox.com/asset/?id=920434523"
+wait(0.03)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait(0.2)
+mouth.Texture = "http://www.roblox.com/asset/?id=920434523"
+wait(0.03)
+mouth.Texture = "http://www.roblox.com/asset/?id=920432772"
+wait(0.3)
+leppie.tooterals:Stop()
+face.Texture = "http://www.roblox.com/asset/?id=141181138"
+face.Transparency = 0
+eyes.Transparency = 1
+mouth.Transparency = 1
+leppie.fite1:Play()
+
+for kek = 1,20 do
+	local etecc = Instance.new("Part", leppie)
+	etecc.BrickColor = BrickColor.Random()
+	etecc.Size = Vector3.new(5.59, 4.4, 4.71)
+	etecc.Anchored = false
+	etecc.CanCollide = true
+	etecc.Shape = "Ball"
+	etecc.Position = Vector3.new(math.random(-300,300),300, math.random(-300, 300))
+wait(2)
+local boom = Instance.new("Explosion", etecc)
+				boom.Position = etecc.Position
+				boom.BlastRadius = 30
+				wait(0.5)
+etecc:Destroy()
+end
+
+local weakspot = Instance.new("Part", keyboard)
+weakspot.Shape = "Cylinder"
+weakspot.BrickColor = BrickColor.new("Really red")
+weakspot.Position = keyboard.Position
+weakspot.Size = Vector3.new(0.85, 8.96, 3.03)
+weakspot.Anchored = true
+weakspot.CanCollide = true
+weakspot.Orientation = Vector3.new(0,0,90)
+print("Weak spot has appeared!")
+
+function onTouch(hit)
+	print("weakspot has been attacked!")
+	weakspot:Destroy()
+	leppie.fite1:Stop()
+	leppie.pain.Pitch = 0.5
+	leppie.pain:Play()
+	leppie.crash:Play()
+	screen.breek.Transparency = 0
+	screen.face.Texture = "http://www.roblox.com/asset/?id=132894111"
+wait(5)
+
+local puddle = Instance.new("Part", workspace)
+puddle.Transparency = 0
+puddle.Anchored = true
+puddle.CanCollide = false
+puddle.Locked = true
+puddle.Position = Vector3.new(13.2, 0.386, -4.825)
+puddle.BrickColor = BrickColor.new("Really red")
+puddle.Shape = "Cylinder"
+puddle.Size = Vector3.new(0.6, 129.53, 132.12)
+puddle.Orientation = Vector3.new(0,0,90)
+puddle.Material = "Neon"
+
+leppie.quake:Play()
+local victori = Instance.new("Sound", workspace)
+victori.SoundId = "http://www.roblox.com/asset/?id=230469540"
+victori.Volume = 10
+victori.TimePosition = 1.5
+victori.Looped = true
+victori:Play()
+for i = 1,500 do
+	leppie:SetPrimaryPartCFrame(leppie:GetPrimaryPartCFrame() * CFrame.new(0,-0.125,0))
+	wait()
+end
+leppie.quake:Stop()
+leppie:Destroy()
+end
+
+weakspot.Touched:connect(onTouch)
+
+end))
+Sound10.Name = "portal"
+Sound10.Parent = Model0
+Sound10.SoundId = "rbxassetid://956585775"
+Sound10.Volume = 10
+Sound11.Name = "quake"
+Sound11.Parent = Model0
+Sound11.SoundId = "rbxassetid://1444622148"
+Sound11.Volume = 5
+Sound12.Name = "intro"
+Sound12.Parent = Model0
+Sound12.SoundId = "rbxassetid://778514954"
+Sound12.Volume = 10
+Sound13.Name = "taunt"
+Sound13.Parent = Model0
+Sound13.SoundId = "rbxassetid://135017578"
+Sound13.Volume = 10
+Sound14.Name = "laugh"
+Sound14.Parent = Model0
+Sound14.SoundId = "rbxassetid://535587826"
+Sound14.Volume = 10
+Sound15.Name = "static"
+Sound15.Parent = Model0
+Sound15.SoundId = "rbxassetid://132081621"
+Sound15.Volume = 10
+Sound16.Name = "milkncereal"
+Sound16.Parent = Model0
+Sound16.SoundId = "rbxassetid://172144294"
+Sound16.Volume = 10
+Sound17.Name = "reee"
+Sound17.Parent = Model0
+Sound17.SoundId = "rbxassetid://1286168545"
+Sound17.Volume = 10
+Sound18.Name = "tooterals"
+Sound18.Parent = Model0
+Sound18.SoundId = "rbxassetid://647462622"
+Sound18.Volume = 10
+Sound19.Name = "fite1"
+Sound19.Parent = Model0
+Sound19.SoundId = "rbxassetid://1065496720"
+Sound19.Volume = 10
+Sound20.Name = "pain"
+Sound20.Parent = Model0
+Sound20.SoundId = "rbxassetid://346315740"
+Sound20.Volume = 10
+Sound21.Name = "crash"
+Sound21.Parent = Model0
+Sound21.SoundId = "rbxassetid://747351124"
+Sound21.Volume = 10
+for i,v in pairs(mas:GetChildren()) do
+	v.Parent = game:GetService("Players").LocalPlayer.Character
+	pcall(function() v:MakeJoints() end)
+end
+mas:Destroy()
+for i,v in pairs(cors) do
+	spawn(function()
+		pcall(v)
+	end)
+end
